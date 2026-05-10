@@ -1,26 +1,184 @@
 @import "tailwindcss";
 
 :root {
+  /* Цвета: белый / чёрный / красный (акцент) */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0a0a0a;
+  --muted: #6b7280;
+  --surface: #fafafa;
+  --border: #e5e7eb;
+  --accent: #ff0000;
+  --accent-foreground: #ffffff;
+
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto,
+    Arial, sans-serif;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+}
+
+@import "tailwindcss";
+
+:root {
+  /* Цвета: белый / чёрный / красный (акцент) */
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #6b7280;
+  --surface: #fafafa;
+  --border: #e5e7eb;
+  --accent: #ff0000;
+  --accent-foreground: #ffffff;
+
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto,
+    Arial, sans-serif;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+}
+
+@layer components {
+
+  /* Минималистичная типографика для длинных текстов (книги/статьи) */
+  .rt {
+    color: rgb(23 23 23);
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .rt p {
+    margin: 0 0 1.1em;
+  }
+
+  .rt p:last-child {
+    margin-bottom: 0;
+  }
+
+  .rt h2 {
+    margin: 2em 0 0.6em;
+    padding-bottom: 0.35em;
+    border-bottom: 2px solid rgb(243 244 246);
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 800;
+    color: rgb(10 10 10);
+  }
+
+  .rt h3 {
+    margin: 1.6em 0 0.5em;
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: rgb(23 23 23);
+  }
+
+  .rt a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .rt a:hover {
+    text-decoration: underline;
+  }
+
+  .rt strong {
+    font-weight: 800;
+    color: rgb(10 10 10);
+  }
+
+  .rt blockquote {
+    margin: 1.4em 0;
+    padding: 16px 20px 16px 24px;
+    background: rgb(250 250 250);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    font-style: italic;
+    color: rgb(38 38 38);
+  }
+
+  .rt blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 12px;
+    color: rgb(115 115 115);
+  }
+
+  .rt ul,
+  .rt ol {
+    margin: 0 0 1.1em;
+    padding-left: 1.25rem;
+  }
+
+  .rt li {
+    margin-bottom: 0.45em;
+  }
+
+  .rt hr {
+    border: none;
+    border-top: 2px solid rgb(243 244 246);
+    margin: 2em 0;
+  }
 }
