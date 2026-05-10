@@ -32,13 +32,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       book.description ??
       `Русский перевод книги ${book.authors} «${book.orig}». Читайте на антитруд. переводы.`,
     alternates: {
-      canonical: `https://antiwork-ru.github.io/books/${slug}/`,
+      canonical: `https://antitrud.vercel.app/${slug}/`,
     },
     openGraph: {
       type: "article",
       title: `${book.ru} – ${book.authors}`,
       description: book.description,
-      url: `https://antiwork-ru.github.io/books/${slug}/`,
+      url: `https://antitrud.vercel.app/${slug}/`,
       ...(coverUrl
         ? { images: [{ url: coverUrl, width: 800, height: 1200, alt: book.ru }] }
         : {}),

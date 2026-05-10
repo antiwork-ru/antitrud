@@ -40,7 +40,8 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: 'CG3LESexrs1uoxk3EjGlzMi21gdTE4zcSWfaWmWO5EY'
+    google: 'CG3LESexrs1uoxk3EjGlzMi21gdTE4zcSWfaWmWO5EY',
+    yandex: '41fc81547f0a3835',
   },
 };
 
