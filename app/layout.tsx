@@ -13,19 +13,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "антитруд.",
   description:
-    "антитруд. переводы – библиотека книг и текстов об антитруде, посттрудовом обществе, критике работы, автоматизации, базовом доходе и социальной теории.",
+    "антитруд. – книги и тексты об антитруде, посттрудовом обществе, критике работы, автоматизации, базовом доходе и социальной теории.",
   alternates: {
-    canonical: "https://antiwork-ru.github.io/books/",
+    canonical: "https://antitrud.vercel.app/",
   },
   openGraph: {
     type: "website",
-    title: "антитруд. переводы",
+    title: "антитруд.",
     description:
-      "Библиотека переводов по антитруду, посттрудовой теории, критике труда, базовому доходу и социальной философии.",
-    url: "https://antiwork-ru.github.io/books/",
+      "антитруд. – книги и тексты об антитруде, посттрудовом обществе, критике работы, автоматизации, базовом доходе и социальной теории.",
+    url: "https://antitrud.vercel.app/",
     images: [
       {
-        url: "https://antiwork-ru.github.io/books/icons/logo.jpg",
+        url: "https://antitrud.vercel.app/public/logo.jpg",
         width: 1200,
         height: 630,
         alt: "антитруд. переводы",
@@ -34,9 +34,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "антитруд. переводы",
-    description: "Библиотека переводов об антитруде, посттруде и критике работы.",
-    images: ["https://antiwork-ru.github.io/books/icons/logo.jpg"],
+    title: "антитруд.",
+    description: "антитруд. – книги и тексты об антитруде, посттрудовом обществе, критике работы, автоматизации, базовом доходе и социальной теории.",
+    images: ["https://antitrud.vercel.app/public/logo.jpg"],
+  },
+
+  verification: {
+    google: 'CG3LESexrs1uoxk3EjGlzMi21gdTE4zcSWfaWmWO5EY'
   },
 };
 
