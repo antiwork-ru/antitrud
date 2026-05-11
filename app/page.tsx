@@ -1,8 +1,6 @@
-import { ArticlesSection } from "../components/ArticlesSection";
 import { Hero } from "../components/Hero";
 import { Hero2 } from "../components/Hero2";
 import { LibrarySection } from "../components/LibrarySection";
-import { ManifestoStrip } from "../components/ManifestoStrip";
 import { QuoteCard } from "../components/QuoteCard";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
