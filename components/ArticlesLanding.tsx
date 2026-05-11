@@ -10,8 +10,8 @@ import { cn } from "../lib/cn";
 
 type Filter = "all" | "a" | "r" | "p" | "l" | "i";
 
-const filters: Array<{ key: Filter; label: string; variant?: "red" }> = [
-    { key: "all", label: "Все", variant: "red" },
+const filters: Array<{ key: Filter; label: string }> = [
+    { key: "all", label: "Все" },
     { key: "a", label: "Статьи" },
     { key: "r", label: "Доклады" },
     { key: "p", label: "Подкасты" },
@@ -21,18 +21,12 @@ const filters: Array<{ key: Filter; label: string; variant?: "red" }> = [
 
 function typeBadgeClass(type: string) {
     switch (type) {
-        case "a":
-            return "bg-sky-50 text-sky-900 border-sky-200";
-        case "r":
-            return "bg-emerald-50 text-emerald-800 border-emerald-200";
-        case "p":
-            return "bg-amber-50 text-amber-900 border-amber-200";
-        case "l":
-            return "bg-violet-50 text-violet-900 border-violet-200";
-        case "i":
-            return "bg-red-50 text-red-800 border-red-200";
-        default:
-            return "bg-neutral-100 text-neutral-700 border-neutral-200";
+        case "a": return "bg-sky-50 text-sky-800 border-sky-200";
+        case "r": return "bg-emerald-50 text-emerald-800 border-emerald-200";
+        case "p": return "bg-amber-50 text-amber-800 border-amber-200";
+        case "l": return "bg-violet-50 text-violet-800 border-violet-200";
+        case "i": return "bg-red-50 text-red-800 border-red-200";
+        default: return "bg-neutral-100 text-neutral-600 border-neutral-200";
     }
 }
 
@@ -46,66 +40,86 @@ export function ArticlesLanding() {
 
     return (
         <>
-            <section className="py-10 sm:py-7">
+            {/* ─── Page header ─────────────────────────────────────── */}
+            <section className="border-b border-[color:var(--border)]">
                 <Container>
-                    <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-                        <div className="relative overflow-hidden rounded-2xl border border-[color:var(--border)] bg-white p-7 sm:p-10">
-                            <div className="absolute inset-y-0 left-0 w-1.5 bg-[color:var(--accent)]" />
-                            <p className="text-xs font-bold uppercase tracking-[0.14em] text-neutral-400">
+                    <div className="py-7 sm:py-16">
+                        {/* Meta */}
+                        <div className="flex items-center gap-3 mb-7">
+                            <span className="font-mono text-[11px] tracking-[0.1em] text-neutral-400 uppercase">
                                 Статьи и публикации
-                            </p>
-                            <h1 className="mt-3 text-balance text-2xl font-extrabold leading-tight tracking-tight text-neutral-950 sm:text-4xl">
-                                Тексты об{" "}
-                                <span className="text-[color:var(--accent)]">антитруде</span> — и
-                                не только
-                            </h1>
-                            <p className="mt-4 max-w-2xl text-pretty text-sm leading-relaxed text-neutral-600 sm:text-base">
-                                Здесь собраны переводы статей, эссе, докладов и других коротких
-                                текстов, а также оригинальные материалы о критике труда,
-                                посттрудовом обществе, базовом доходе, автоматизации и прочих
-                                вопросах.
-                            </p>
-
-                            <div className="mt-6 flex flex-wrap gap-2">
-                                {filters.map((f) => {
-                                    const active = f.key === filter;
-                                    return (
-                                        <button
-                                            key={f.key}
-                                            type="button"
-                                            onClick={() => setFilter(f.key)}
-                                            className={cn(
-                                                "rounded-full border px-4 py-2 text-sm font-semibold transition",
-                                                active
-                                                    ? f.variant === "red"
-                                                        ? "border-[color:var(--accent)] bg-[color:var(--accent)] text-white"
-                                                        : "border-neutral-950 bg-neutral-950 text-white"
-                                                    : "border-[color:var(--border)] bg-white text-neutral-600 hover:border-neutral-300 hover:text-neutral-900",
-                                            )}
-                                        >
-                                            {f.label}
-                                        </button>
-                                    );
-                                })}
-                            </div>
+                            </span>
+                            <span className="h-px w-6 bg-neutral-200" />
                         </div>
 
-                        <div className="hidden lg:block">
-                            <GlossaryCard />
+                        {/* Headline + glossary */}
+                        <div className="grid lg:grid-cols-[1fr_320px] gap-10 lg:gap-16">
+                            <div>
+                                <h1 className="text-[clamp(1.8rem,4vw,3.5rem)] font-bold leading-[1.05] tracking-[-0.03em] text-neutral-950">
+                                    Тексты об{" "}
+                                    <em className="not-italic text-[color:var(--accent)]">
+                                        антитруде
+                                    </em>{" "}
+                                    — и не только
+                                </h1>
+
+                                <p className="mt-5 max-w-[600px] text-[14px] leading-relaxed text-neutral-500 font-light">
+                                    Переводы статей, эссе, докладов и других коротких текстов, а также
+                                    оригинальные материалы о критике труда, посттрудовом обществе,
+                                    базовом доходе и автоматизации.
+                                </p>
+
+                                {/* Filter buttons */}
+                                <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+                                    {filters.map((f) => {
+                                        const active = f.key === filter;
+                                        return (
+                                            <button
+                                                key={f.key}
+                                                type="button"
+                                                onClick={() => setFilter(f.key)}
+                                                className={cn(
+                                                    // Добавьте w-full и h-full, чтобы кнопка занимала всю ячейку
+                                                    "w-full h-full flex items-center justify-center",
+                                                    "rounded-md border px-3.5 py-1.5 font-mono text-[11px] tracking-[0.04em] uppercase font-medium transition-all",
+                                                    active
+                                                        ? f.key === "all"
+                                                            ? "border-[color:var(--accent)] bg-[color:var(--accent)] text-white"
+                                                            : "border-neutral-900 bg-neutral-900 text-white"
+                                                        : "border-[color:var(--border)] bg-white text-neutral-500 hover:border-neutral-400 hover:text-neutral-800"
+                                                )}
+                                            >
+                                                {f.label}
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+
+                            {/* Glossary — sidebar on lg */}
+                            <div className="hidden lg:block">
+                                <GlossaryCard />
+                            </div>
                         </div>
                     </div>
                 </Container>
             </section>
 
-            <section className="pb-16">
+            {/* ─── Articles grid ───────────────────────────────────── */}
+            <section className="py-6 sm:py-12">
                 <Container>
-                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-neutral-400">
-                        Все материалы
-                    </p>
+                    <div className="flex items-center justify-between mb-6">
+                        <div className="font-mono text-[10px] tracking-[0.1em] uppercase text-neutral-400">
+                            Все материалы
+                        </div>
+                        <div className="font-mono text-[11px] text-neutral-400">
+                            {items.length} {items.length === 1 ? "материал" : "материалов"}
+                        </div>
+                    </div>
 
-                    <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                         {items.length === 0 ? (
-                            <div className="col-span-full rounded-2xl border border-[color:var(--border)] bg-white p-10 text-center text-sm text-neutral-500">
+                            <div className="col-span-full rounded-xl border border-[color:var(--border)] bg-white p-10 text-center font-mono text-[12px] text-neutral-400">
                                 Материалов по этой категории пока нет.
                             </div>
                         ) : null}
@@ -113,63 +127,65 @@ export function ArticlesLanding() {
                         {items.map((a) => (
                             <article
                                 key={a.slug}
-                                className="overflow-hidden rounded-2xl border border-[color:var(--border)] bg-white transition hover:-translate-y-0.5 hover:border-neutral-300"
+                                className="group overflow-hidden rounded-xl border border-[color:var(--border)] bg-white transition-all hover:border-neutral-300 hover:shadow-sm"
                             >
+                                {/* Thumbnail */}
                                 <Link href={`/articles/${a.slug}`}>
-                                    <div className="relative aspect-[16/9] w-full bg-neutral-50">
+                                    <div className="relative aspect-[16/9] w-full bg-neutral-50 overflow-hidden">
                                         <Image
                                             src={a.imageUrl}
                                             alt={a.title}
                                             fill
-                                            className="object-cover"
+                                            className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                                             sizes="(max-width: 1024px) 100vw, 33vw"
                                         />
                                     </div>
                                 </Link>
 
-                                <div className="flex h-full flex-col gap-3 p-5">
+                                <div className="flex flex-col gap-3 p-5">
+                                    {/* Meta row */}
                                     <div className="flex flex-wrap items-center gap-2">
-                                        <span
-                                            className={cn(
-                                                "rounded-full border px-2.5 py-1 text-[11px] font-bold",
-                                                typeBadgeClass(a.type),
-                                            )}
-                                        >
+                                        <span className={cn("rounded-full border px-2 py-0.5 font-mono text-[10px] font-medium", typeBadgeClass(a.type))}>
                                             {a.typeLabel}
                                         </span>
-                                        <span className="text-xs text-neutral-500">
-                                            {a.dateLabel}
-                                        </span>
-                                        <span className="text-xs text-neutral-400">· {a.source}</span>
+                                        <span className="font-mono text-[11px] text-neutral-400">{a.dateLabel}</span>
+                                        <span className="font-mono text-[11px] text-neutral-300">·</span>
+                                        <span className="font-mono text-[11px] text-neutral-400">{a.source}</span>
                                     </div>
 
-                                    <div className="text-sm font-bold leading-snug text-neutral-950">
-                                        <Link href={`/articles/${a.slug}`} className="hover:underline">
+                                    {/* Title */}
+                                    <div className="text-[13px] font-bold leading-snug tracking-tight text-neutral-950">
+                                        <Link href={`/articles/${a.slug}`} className="hover:text-[color:var(--accent)] transition-colors">
                                             {a.title}
                                         </Link>
                                     </div>
 
-                                    <p className="text-sm leading-relaxed text-neutral-600">
+                                    {/* Description */}
+                                    <p className="text-[13px] leading-relaxed text-neutral-500 line-clamp-3">
                                         {a.description}
                                     </p>
 
-                                    <div className="mt-auto flex flex-wrap gap-2 pt-1">
+                                    {/* Links */}
+                                    <div className="mt-auto flex flex-wrap gap-2 pt-2">
                                         <Link
-                                            className="inline-flex w-fit rounded-lg border border-neutral-200 px-3 py-2 text-xs font-semibold text-neutral-800 hover:bg-neutral-50"
                                             href={`/articles/${a.slug}`}
+                                            className="inline-flex items-center gap-1.5 rounded-lg border border-[color:var(--border)] px-3 py-1.5 font-mono text-[11px] text-neutral-700 hover:border-neutral-400 hover:bg-neutral-50 transition-all"
                                         >
-                                            Читать →
+                                            Читать
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                                <path d="M1 5.5h8M6 3l2.5 2.5L6 8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
                                         </Link>
-                                        {a.externalUrl ? (
+                                        {a.externalUrl && (
                                             <a
-                                                className="inline-flex w-fit rounded-lg border border-emerald-200 px-3 py-2 text-xs font-semibold text-emerald-800 hover:bg-emerald-50"
                                                 href={a.externalUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-1.5 rounded-lg border border-emerald-200 px-3 py-1.5 font-mono text-[11px] text-emerald-700 hover:bg-emerald-50 transition-all"
                                             >
                                                 Teletype →
                                             </a>
-                                        ) : null}
+                                        )}
                                     </div>
                                 </div>
                             </article>

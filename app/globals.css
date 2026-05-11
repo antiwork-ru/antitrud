@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap');
 @import "tailwindcss";
 
 :root {
-  /* Цвета: белый / чёрный / красный (акцент) */
   --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted: #6b7280;
-  --surface: #fafafa;
-  --border: #e5e7eb;
-  --accent: #ff0000;
+  --foreground: #080808;
+  --muted: #737373;
+  --surface: #f7f7f7;
+  --border: #e8e8e8;
+  --border-strong: #c8c8c8;
+  --accent: #e60000;
+  --accent-hover: #b30000;
   --accent-foreground: #ffffff;
+  --accent-subtle: #fff0f0;
 
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --font-mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: 'Instrument Serif', Georgia, serif;
 }
 
 @theme inline {
@@ -22,85 +25,44 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-mono);
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto,
-    Arial, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  letter-spacing: -0.01em;
 }
 
 @layer base {
   :focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 1.5px solid var(--accent);
     outline-offset: 3px;
   }
 
   ::selection {
-    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
   }
 }
 
-@import "tailwindcss";
-
-:root {
-  /* Цвета: белый / чёрный / красный (акцент) */
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted: #6b7280;
-  --surface: #fafafa;
-  --border: #e5e7eb;
-  --accent: #ff0000;
-  --accent-foreground: #ffffff;
-
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+/* ─── Mono label utility ──────────────────────────────── */
+.mono {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-surface: var(--surface);
-  --color-border: var(--border);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-mono);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto,
-    Arial, sans-serif;
-}
-
-@layer base {
-  :focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
-  }
-
-  ::selection {
-    background: color-mix(in srgb, var(--accent) 18%, transparent);
-  }
-}
-
+/* ─── Reading typography ──────────────────────────────── */
 @layer components {
-
-  /* Минималистичная типографика для длинных текстов (книги/статьи) */
   .rt {
     color: rgb(23 23 23);
     font-size: 16px;
@@ -118,25 +80,26 @@ body {
   .rt h2 {
     margin: 2em 0 0.6em;
     padding-bottom: 0.35em;
-    border-bottom: 2px solid rgb(243 244 246);
+    border-bottom: 1px solid rgb(232 232 232);
     font-size: 20px;
     line-height: 1.25;
-    font-weight: 800;
-    color: rgb(10 10 10);
+    font-weight: 700;
+    color: rgb(8 8 8);
+    letter-spacing: -0.02em;
   }
 
   .rt h3 {
     margin: 1.6em 0 0.5em;
     font-size: 17px;
     line-height: 1.35;
-    font-weight: 700;
+    font-weight: 600;
     color: rgb(23 23 23);
   }
 
   .rt a {
     color: var(--accent);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .rt a:hover {
@@ -144,17 +107,19 @@ body {
   }
 
   .rt strong {
-    font-weight: 800;
-    color: rgb(10 10 10);
+    font-weight: 700;
+    color: rgb(8 8 8);
   }
 
   .rt blockquote {
     margin: 1.4em 0;
     padding: 16px 20px 16px 24px;
-    background: rgb(250 250 250);
-    border-left: 4px solid var(--accent);
-    border-radius: 0 10px 10px 0;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-family: var(--font-serif);
     font-style: italic;
+    font-size: 17px;
     color: rgb(38 38 38);
   }
 
@@ -162,7 +127,9 @@ body {
     display: block;
     margin-top: 10px;
     font-style: normal;
-    font-size: 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
     color: rgb(115 115 115);
   }
 
@@ -178,7 +145,7 @@ body {
 
   .rt hr {
     border: none;
-    border-top: 2px solid rgb(243 244 246);
+    border-top: 1px solid rgb(232 232 232);
     margin: 2em 0;
   }
 }

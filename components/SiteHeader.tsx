@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "../components/Container";
 import { Logo } from "../components/Logo";
 import { ManifestoStrip } from './ManifestoStrip';
+import { Eye } from './Eye';
 
 export function SiteHeader() {
   return (
@@ -23,8 +24,10 @@ export function SiteHeader() {
           rel="noopener noreferrer"
         >
           <span className="hidden sm:inline">Telegram</span>
-          <span className="relative h-7 w-7 overflow-hidden rounded-full border border-[color:var(--border)] bg-white">
-            <Image src="/icons/logo.svg" alt="антитруд." fill className="object-cover" />
+          <span className="h-7 w-7">
+            <Eye />
+            {/* <Image src="/icons/logo.svg" alt="антитруд." fill className="object-cover" /> */}
+            {/*  */}
           </span>
         </a>
       </Container>

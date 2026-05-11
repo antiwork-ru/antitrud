@@ -15,12 +15,16 @@ export function QuoteCard() {
 
   return (
     <div className="flex h-full flex-col">
-      <p className="text-pretty text-base leading-relaxed text-neutral-800 italic">
+      {/* ИЗМЕНЕНО: text-base -> text-sm */}
+      <p className="text-pretty text-sm leading-relaxed text-neutral-800 italic">
         {q.text}
       </p>
+
       <div className="mt-5">
-        <div className="text-sm font-semibold text-neutral-900">{q.author}</div>
-        <div className="text-sm text-neutral-500">{q.book}</div>
+        {/* ИЗМЕНЕНО: text-sm -> text-xs */}
+        <div className="text-xs font-semibold text-neutral-900">{q.author}</div>
+        {/* ИЗМЕНЕНО: text-sm -> text-xs */}
+        <div className="text-xs text-neutral-500">{q.book}</div>
       </div>
 
       <button

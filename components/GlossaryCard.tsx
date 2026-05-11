@@ -13,35 +13,38 @@ export function GlossaryCard() {
     const g = all[index];
 
     return (
-        <div className="flex h-full flex-col rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
-            {/* Заголовок "Глоссарий" - немного увеличил шрифт */}
-            <p className="text-xs font-bold uppercase tracking-[0.14em] text-neutral-400">
+        <div className="flex h-full flex-col rounded-xl border border-[color:var(--border)] bg-white p-7">
+            {/* Label */}
+            <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-neutral-400 mb-4">
                 Глоссарий
             </p>
 
-            {/* Термин - увеличил с lg до xl или 2xl */}
-            <p className="mt-3 text-2xl font-extrabold leading-tight text-neutral-950">
+            {/* Term */}
+            <p className="text-2xl font-bold tracking-[-0.025em] text-neutral-950 leading-tight">
                 {g.term}
             </p>
 
-            {/* Оригинал - увеличил с xs до sm */}
-            <p className="mt-1 text-sm italic text-neutral-400">
+            {/* Original */}
+            <p
+                className="mt-1 text-[13px] text-neutral-400"
+                style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic" }}
+            >
                 {g.orig}
             </p>
 
-            {/* Определение - увеличил с sm до base (16px) */}
-            <p className="mt-4 text-base leading-relaxed text-neutral-600">
+            {/* Definition */}
+            <p className="mt-4 text-[14px] leading-relaxed text-neutral-600 flex-1">
                 {g.def}
             </p>
 
-            {/* Нижняя часть с кнопкой */}
-            <div className="mt-auto flex items-center justify-between border-t border-[color:var(--border)] pt-4">
-                <span className="text-sm font-semibold text-neutral-400">
+            {/* Footer */}
+            <div className="mt-6 flex items-center justify-between border-t border-[color:var(--border)] pt-4">
+                <span className="font-mono text-[11px] text-neutral-400">
                     {index + 1} / {all.length}
                 </span>
                 <button
                     type="button"
-                    className="rounded-lg border border-neutral-200 bg-white px-4 py-2 text-sm font-semibold text-neutral-500 hover:border-neutral-300 hover:text-neutral-800"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[color:var(--border)] bg-white px-3.5 py-2 font-mono text-[10px] tracking-[0.04em] uppercase text-neutral-500 hover:border-neutral-300 hover:text-neutral-800 transition-colors"
                     onClick={() => setIndex((i) => (i + 1) % all.length)}
                 >
                     ↻ другой термин
