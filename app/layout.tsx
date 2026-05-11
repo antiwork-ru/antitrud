@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: "https://antitrud.vercel.app/",
     images: [
       {
-        url: "https://antitrud.vercel.app/public/logo.jpg",
+        url: "https://antitrud.vercel.app/logo.jpg",
         width: 1200,
         height: 630,
         alt: "антитруд. переводы",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "антитруд.",
     description: "антитруд. – книги и тексты об антитруде, посттрудовом обществе, критике работы, автоматизации, базовом доходе и социальной теории.",
-    images: ["https://antitrud.vercel.app/public/logo.jpg"],
+    images: ["https://antitrud.vercel.app/logo.jpg"],
   },
 
   verification: {
