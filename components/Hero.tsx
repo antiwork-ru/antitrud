@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "../components/Container";
+import { QuizStrip } from "./QuizStrip";
 
 export function Hero({ quote }: { quote: React.ReactNode }) {
   return (
@@ -51,6 +52,7 @@ export function Hero({ quote }: { quote: React.ReactNode }) {
 
             </p>
 
+
             {/* CTA row */}
             <div className="mt-8 flex flex-wrap gap-6 justify-center">
               <a
@@ -76,8 +78,15 @@ export function Hero({ quote }: { quote: React.ReactNode }) {
               >
                 Telegram →
               </a>
+
+
             </div>
+
+
+
           </div>
+
+
 
 
 

@@ -25,9 +25,9 @@ export default function Headline() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-[clamp(2rem,5vw,3.75rem)] self-center text-center"
                 >
-                    что{" "}
+
                     <span className="text-[color:var(--accent)]  decoration-2 underline-offset-8">
-                        не так с работой
+                        что{" "} не так с работой
                     </span>
                 </motion.div>
 

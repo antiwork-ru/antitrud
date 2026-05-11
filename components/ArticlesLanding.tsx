@@ -7,6 +7,7 @@ import { Container } from "../components/Container";
 import { GlossaryCard } from "../components/GlossaryCard";
 import { articles } from "../data/articles";
 import { cn } from "../lib/cn";
+import { motion } from 'framer-motion';
 
 type Filter = "all" | "a" | "r" | "p" | "l" | "i";
 
@@ -43,9 +44,9 @@ export function ArticlesLanding() {
             {/* ─── Page header ─────────────────────────────────────── */}
             <section className="border-b border-[color:var(--border)]">
                 <Container>
-                    <div className="py-7 sm:py-16">
+                    <div className="pt-6 pb-7 sm:pt-6 sm:pb-16">
                         {/* Meta */}
-                        <div className="flex items-center gap-3 mb-7">
+                        <div className="flex items-center gap-3 mb-4">
                             <span className="font-mono text-[11px] tracking-[0.1em] text-neutral-400 uppercase">
                                 Статьи и публикации
                             </span>
@@ -56,11 +57,23 @@ export function ArticlesLanding() {
                         <div className="grid lg:grid-cols-[1fr_320px] gap-10 lg:gap-16">
                             <div>
                                 <h1 className="text-[clamp(1.8rem,4vw,3.5rem)] font-bold leading-[1.05] tracking-[-0.03em] text-neutral-950">
-                                    Тексты об{" "}
-                                    <em className="not-italic text-[color:var(--accent)]">
-                                        антитруде
-                                    </em>{" "}
-                                    — и не только
+                                    <motion.div
+                                        initial={{ opacity: 0, x: -30 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.8 }}
+                                        className="text-[clamp(2rem,5vw,3.75rem)] text-center md:text-left md:self-start w-full md:w-auto"
+                                    > Тексты об{" "}
+                                        <em className="not-italic text-[color:var(--accent)]">
+                                            антитруде
+                                        </em>{" "}</motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0, scale: 0.9 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.8, delay: 0.5 }}
+                                        className="text-[clamp(2rem,5vw,3.75rem)] text-center md:text-left md:self-start w-full md:w-auto"
+                                    > — и не только</motion.div>
                                 </h1>
 
                                 <p className="mt-5 max-w-[600px] text-[14px] leading-relaxed text-neutral-500 font-light">
@@ -103,10 +116,10 @@ export function ArticlesLanding() {
                         </div>
                     </div>
                 </Container>
-            </section>
+            </section >
 
             {/* ─── Articles grid ───────────────────────────────────── */}
-            <section className="py-6 sm:py-12">
+            < section className="py-6 sm:py-12" >
                 <Container>
                     <div className="flex items-center justify-between mb-6">
                         <div className="font-mono text-[10px] tracking-[0.1em] uppercase text-neutral-400">
@@ -192,7 +205,7 @@ export function ArticlesLanding() {
                         ))}
                     </div>
                 </Container>
-            </section>
+            </section >
         </>
     );
 }
