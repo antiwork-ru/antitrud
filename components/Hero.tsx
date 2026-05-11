@@ -4,7 +4,7 @@ import { QuizStrip } from "./QuizStrip";
 
 export function Hero({ quote }: { quote: React.ReactNode }) {
   return (
-    <div>
+    <div className='bg-[color:var(--surface)]'>
       <section id="hero" className="border-b border-[color:var(--border)]">
         <Container>
           {/* Main hero block */}

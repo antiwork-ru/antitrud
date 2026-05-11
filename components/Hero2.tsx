@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Hero2({ quote }: { quote: React.ReactNode }) {
     return (
-        <section id="hero" className="border-b border-[color:var(--border)] bg-[#F5F5F5]">
+        <section id="hero" className="border-b border-[color:var(--border)] bg-[color:var(--surface)]">
             <Container>
 
                 {/* Bottom band: stats + latest update + quote */}

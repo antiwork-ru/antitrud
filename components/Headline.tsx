@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Headline() {
     return (
-        <div>
+        <div className='bg-[color:var(--surface)]'>
             <section className="flex flex-col gap-2 [word-spacing:-0.2em] w-full max-w-[75rem] mx-auto py-0 px-0 font-bold leading-[1.05] tracking-[-0.03em] text-neutral-950 ">
                 {/* Первая фраза - слева */}
                 <motion.div

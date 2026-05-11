@@ -24,7 +24,7 @@ export function BookPage({ book }: BookPageProps) {
   const coverUrl = book.cover ? `${BOOKS_BASE_URL}${book.cover}` : null;
 
   return (
-    <div className="min-h-screen bg-[color:var(--surface)]">
+    <div className="min-h-screen bg-[color:var(--surface)] ">
       {/* Back nav */}
       <div className="border-b border-[color:var(--border)] bg-white">
         <Container>

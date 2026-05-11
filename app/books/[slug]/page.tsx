@@ -52,9 +52,9 @@ export default async function BookRoute({ params }: Props) {
   if (!book) notFound();
 
   return (
-    <div className="flex min-h-full flex-col">
+    <div className="flex min-h-full flex-col  ">
       <SiteHeader />
-      <main className="flex-1">
+      <main className="flex-1 ">
         <BookPage book={book} />
       </main>
       <SiteFooter />

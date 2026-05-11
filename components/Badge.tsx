@@ -3,10 +3,10 @@ import { Container } from '../components/Container';
 export function Badge() {
     return (
         // Обертка с фоном на всю ширину
-        <div>
+        <div className='bg-[color:var(--surface)]'>
             <Container>
                 {/* Внутренний контент, который остается центрированным */}
-                <div className="pt-8 sm:pt-10 lg:pt-12 pb-4 sm:pb-5 lg:pb-6">
+                <div className="pt-8 sm:pt-10 lg:pt-12 pb-4 sm:pb-5 lg:pb-6 ">
                     <div className="flex items-center justify-center gap-3 mb-0">
                         <span className="font-mono text-[11px] tracking-[0.1em] text-neutral-400 uppercase">
                             независимый проект

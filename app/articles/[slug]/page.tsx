@@ -83,7 +83,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 </Link>
             </div>
 
-            <div className="py-8 sm:py-12">
+            <div className="py-8 sm:py-12 ">
                 <Container>
 
                     <div className="mx-auto max-w-[720px]">
