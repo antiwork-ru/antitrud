@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { SiteHeader } from "../../components/SiteHeader";
 import { SiteFooter } from "../../components/SiteFooter";
 import { Container } from "../../components/Container";
+
 
 const questions = [
     {
@@ -143,7 +144,9 @@ const results = [
 ];
 
 function getResult(score: number) {
-    return results.find((r) => score >= r.range[0] && score <= r.range[1]) ?? results[3];
+    return results.find(
+        (r) => score >= r.range[0] && score <= r.range[1]
+    ) ?? results[3];
 }
 
 export default function QuizPage() {
@@ -152,20 +155,53 @@ export default function QuizPage() {
     const [selected, setSelected] = useState<number | null>(null);
     const [done, setDone] = useState(false);
 
+    const [sessionId, setSessionId] = useState<string | null>(null);
+
+    // session id init (ОДИН РАЗ)
+    useEffect(() => {
+        const id =
+            localStorage.getItem("quiz_session_id") ||
+            crypto.randomUUID();
+
+        localStorage.setItem("quiz_session_id", id);
+        setSessionId(id);
+    }, []);
+
     const totalScore = answers.reduce((a, b) => a + b, 0);
     const result = getResult(totalScore);
-    const progress = ((current) / questions.length) * 100;
+    const progress = (current / questions.length) * 100;
 
     function handleSelect(score: number) {
         setSelected(score);
     }
 
-    function handleNext() {
+    async function handleNext() {
         if (selected === null) return;
+        if (!sessionId) return; // защита от null
+
         const next = [...answers, selected];
+        const total = next.reduce((a, b) => a + b, 0);
+
         setAnswers(next);
         setSelected(null);
+
         if (current + 1 >= questions.length) {
+            try {
+                await fetch("/api/quiz-result", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        score: total,
+                        answers: next,
+                        session_id: sessionId,
+                    }),
+                });
+            } catch (error) {
+                console.error(error);
+            }
+
             setDone(true);
         } else {
             setCurrent((c) => c + 1);
