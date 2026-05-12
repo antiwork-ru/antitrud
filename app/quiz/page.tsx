@@ -352,6 +352,77 @@ export default function QuizPage() {
                                         </div>
                                     </div>
 
+                                    {/* Share card */}
+                                    <div className="rounded-xl border border-[color:var(--border)] bg-neutral-50 p-5 mb-6">
+                                        <p className="font-mono text-[11px] text-neutral-400 uppercase tracking-[0.1em] mb-3">
+                                            Поделиться результатом
+                                        </p>
+
+                                        <div className="grid grid-cols-3 gap-2">
+                                            {/* X (Twitter) */}
+                                            <a
+                                                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                                                    `Я прошёл тест «Насколько трудовая этика отравила вам душу?»\nМой диагноз: ${result.emoji} ${result.title} (${totalScore} из ${questions.length * 3} баллов)\nА какой у тебя? ${window.location.origin}/quiz`
+                                                )}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center justify-center gap-1.5 rounded-lg border border-neutral-200 bg-white py-2.5 text-xs font-medium text-neutral-700 hover:border-neutral-800 hover:bg-neutral-100 transition-colors"
+                                                aria-label="Поделиться в X"
+                                            >
+                                                {/* Иконка X */}
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                                                </svg>
+                                                <span></span>
+                                            </a>
+
+                                            {/* Telegram */}
+                                            <a
+                                                href={`https://t.me/share/url?url=${encodeURIComponent(
+                                                    window.location.origin + "/quiz"
+                                                )}&text=${encodeURIComponent(
+                                                    `Мой результат теста «Трудовая этика»: ${result.emoji} ${result.title} (${totalScore}/24 баллов)`
+                                                )}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center justify-center gap-1.5 rounded-lg border border-neutral-200 bg-white py-2.5 text-xs font-medium text-neutral-700 hover:border-blue-400 hover:bg-blue-50 transition-colors"
+                                                aria-label="Поделиться в Telegram"
+                                            >
+                                                {/* Иконка Telegram */}
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                                </svg>
+                                                <span>Telegram</span>
+                                            </a>
+
+                                            {/* VK */}
+                                            <a
+                                                href={`https://vk.com/share.php?url=${encodeURIComponent(
+                                                    window.location.origin + "/quiz"
+                                                )}&title=${encodeURIComponent(
+                                                    `Тест: насколько трудовая этика отравила душу?`
+                                                )}&comment=${encodeURIComponent(
+                                                    `Мой результат: ${result.emoji} ${result.title} (${totalScore} баллов из ${questions.length * 3})`
+                                                )}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center justify-center gap-1.5 rounded-lg border border-neutral-200 bg-white py-2.5 text-xs font-medium text-neutral-700 hover:border-blue-600 hover:bg-blue-50 transition-colors"
+                                                aria-label="Поделиться во ВКонтакте"
+                                            >
+                                                {/* Иконка VK */}
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                                    <path d="M15.5 8.5a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" />
+                                                    <path d="M8.885 11.5c.47 0 .88-.23 1.14-.58.23-.31.32-.7.38-1.07.05-.38.06-.77.11-1.15.03-.23.12-.28.33-.22.23.07.45.2.66.35.17.13.33.28.5.4.19.14.41.16.62.04.17-.1.24-.27.2-.46a2.18 2.18 0 0 0-.32-.63c-.25-.34-.54-.64-.84-.93-.16-.16-.34-.3-.48-.48-.14-.18-.13-.35.02-.52.24-.26.49-.5.72-.76.34-.38.66-.77.88-1.23.1-.21.12-.43-.06-.61-.18-.18-.43-.16-.63-.05-.2.11-.35.28-.5.45-.28.34-.57.68-.84 1.03-.13.17-.26.22-.46.13-.2-.09-.33-.23-.39-.44-.1-.38-.16-.77-.17-1.16 0-.29-.08-.43-.37-.44h-1.3c-.4 0-.46.19-.5.55-.07.6-.1 1.19-.1 1.79 0 .16-.05.3-.16.42-.1.1-.22.11-.34.03a1.98 1.98 0 0 1-.22-.13c-.68-.44-1.28-.98-1.82-1.6a3.2 3.2 0 0 0-.47-.47c-.1-.08-.22-.1-.35-.05-.14.05-.18.18-.18.31-.01.32.1.62.24.9.28.55.7 1 1.12 1.44.34.35.7.68 1.01 1.05.22.26.24.56.06.84-.17.25-.36.48-.57.7-.26.26-.52.52-.73.82-.16.23-.17.47.03.68.2.21.43.2.68.07.25-.14.45-.34.65-.54.23-.24.48-.46.73-.67.17-.15.3-.16.5-.03.28.19.54.41.77.67.18.2.39.38.63.5.18.08.37.06.57.07Z" fill="white" fillRule="evenodd" clipRule="evenodd" />
+                                                </svg>
+                                                <span>VK</span>
+                                            </a>
+                                        </div>
+
+                                        <p className="font-mono text-[10px] text-neutral-400 mt-3">
+                                            Нажмите на соцсеть, чтобы поделиться своим результатом
+                                        </p>
+                                    </div>
+
                                     <div className="flex flex-col sm:flex-row gap-3">
                                         <Link
                                             href="/articles"

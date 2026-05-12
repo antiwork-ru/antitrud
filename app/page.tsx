@@ -7,6 +7,7 @@ import { SiteHeader } from "../components/SiteHeader";
 import { StartSection } from "../components/StartSection";
 import Headline from '../components/Headline';
 import { Badge } from '../components/Badge';
+import NewsTicker from '../components/NewsTicker';
 
 export default function Home() {
   return (

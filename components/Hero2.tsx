@@ -1,5 +1,6 @@
 import { Container } from "../components/Container";
 import Link from "next/link";
+import NewsTicker from "../components/NewsTicker";
 
 export function Hero2({ quote }: { quote: React.ReactNode }) {
     return (
@@ -8,31 +9,16 @@ export function Hero2({ quote }: { quote: React.ReactNode }) {
 
                 {/* Bottom band: stats + latest update + quote */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 border-t border-[color:var(--border)] divide-y sm:divide-y-0 sm:divide-x divide-[color:var(--border)]">
-                    {/* Stats + Quiz */}
-                    <div className="flex flex-col justify-center gap-5 py-6 sm:pr-8">
-                        <div className="flex items-center justify-center sm:justify-start gap-10">
-                            {[
-                                { value: "24", label: "книг в базе" },
-                                { value: "10", label: "готово полностью" },
-                                { value: "13", label: "в работе" },
-                            ].map((s) => (
-                                <div key={s.label} className="flex flex-col items-center justify-center text-center">
-                                    <div className="text-2xl font-bold tracking-tight text-neutral-950">{s.value}</div>
-                                    <div className="mt-0.5 font-mono text-[11px] tracking-[0.06em] text-neutral-400 uppercase">{s.label}</div>
-                                </div>
-                            ))}
-                        </div>
-
+                    {/* News ticker + Quiz */}
+                    <div className="flex flex-col justify-between py-6 sm:pr-8">
+                        <NewsTicker />
                         <Link
                             href="/quiz"
-                            className="flex flex-col items-center justify-center text-center group"
+                            className="mt-4 inline-flex items-center gap-1.5 group w-fit"
                         >
-                            <div className="text-2xl font-bold tracking-tight text-[color:var(--accent)] group-hover:opacity-80 transition-opacity md:-ml-8">
-                                ?
-                            </div>
-                            <div className="mt-0.5 font-mono text-[11px] tracking-[0.06em] text-neutral-400 uppercase group-hover:text-[color:var(--accent)] transition-colors md:-ml-6">
-                                пройти тест
-                            </div>
+                            <span className="font-mono text-[11px] tracking-[0.08em] text-[color:var(--accent)] uppercase group-hover:text-neutral-950 transition-colors">
+                                пройти тест на этичность
+                            </span>
                         </Link>
                     </div>
 
