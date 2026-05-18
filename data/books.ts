@@ -700,7 +700,7 @@ export const books: Book[] = [
     ru: "Проклятие Голиафа: история и будущее социального коллапса",
     orig: "Goliath's Curse: The History and Future of Societal Collapse",
     authors: "Люк Кемп",
-    tags: ["анархизм", "история"],
+    tags: ["история"],
     status: "wip",
     cover: "covers/book24.jpg",
     tt: "https://teletype.in/@antitrud_ru/collapse",

@@ -10,6 +10,7 @@ const inter = Inter({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: "антитруд.",
   description:
