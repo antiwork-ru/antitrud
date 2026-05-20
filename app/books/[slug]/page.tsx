@@ -27,10 +27,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const coverUrl = book.cover ? `${BOOKS_BASE_URL}${book.cover}` : undefined;
 
   return {
-    title: `${book.ru} – ${book.authors} | антитруд. переводы`,
+    title: `${book.ru} (${book.orig}) – ${book.authors}${book.authorsOrig ? ` (${book.authorsOrig})` : ''} | антитруд. переводы`,
     description:
       book.description ??
-      `Русский перевод книги ${book.authors} «${book.orig}». Читайте на антитруд. переводы.`,
+      `Русский перевод книги ${book.authorsOrig} «${book.orig}». Читайте на антитруд. переводы.`,
     alternates: {
       canonical: `https://antitrud.vercel.app/${slug}/`,
     },

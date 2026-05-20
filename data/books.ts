@@ -9,6 +9,7 @@ export type Book = {
   ru: string;
   orig: string;
   authors: string;
+  authorsOrig: string;
   tags: string[];
   status: BookStatus;
   cover?: string; // относительный путь (covers/...)
@@ -37,8 +38,9 @@ export const statusLabel: Record<BookStatus, string> = {
 export const books: Book[] = [
   {
     ru: "Обсуждение пост-трудового будущего: перспективы из философии и социальных наук",
-    orig: "Debating a Post-Work Future: Perspectives from Philosophy and the Social Sciences",
+    orig: "Debating a Post-Work Future: Perspectives from Philosophy and the Social Sciences by Denise Celentano, Michael Cholbi",
     authors: "Челентано, Чолби, Деранти и др.",
+    authorsOrig: "Denise Celentano, Michael Cholbi",
     tags: ["посттруд", "антитруд", "философия"],
     status: "done",
     cover: "covers/book9.jpg",
@@ -79,8 +81,9 @@ export const books: Book[] = [
   },
   {
     ru: "Проблема с работой. Феминизм, марксизм, антитрудовая политика и пострабочие образы",
-    orig: "The problem with work: feminism, Marxism, antiwork politics and postwork imaginaries",
+    orig: "The problem with work: feminism, Marxism, antiwork politics and postwork imaginaries by Kathi Weeks",
     authors: "Кэти Викс",
+    authorsOrig: "Kathi Weeks",
     tags: ["антитруд", "феминизм", "марксизм"],
     status: "done",
     cover: "covers/book3.jpeg",
@@ -121,8 +124,9 @@ export const books: Book[] = [
   },
   {
     ru: "Критика труда в современной французской мысли: от Шарля Фурье до Ги Дебора",
-    orig: "The Critique Of Work In Modern French Thought: From Charles Fourier To Guy Debord",
+    orig: "The Critique Of Work In Modern French Thought: From Charles Fourier To Guy Debord by Alastair Hemmens",
     authors: "Аластар Хемменс",
+    authorsOrig: "Alastair Hemmens",
     tags: ["антитруд", "философия", "история"],
     status: "done",
     cover: "covers/book5.jpeg",
@@ -162,8 +166,9 @@ export const books: Book[] = [
   },
   {
     ru: "О мальчиках и мужчинах: почему современный мужчина испытывает трудности, почему это важно и что с этим делать",
-    orig: "Of Boys And Men: Why the Modern Male Is Struggling, Why It Matters, and What to Do about It",
+    orig: "Of Boys And Men: Why the Modern Male Is Struggling, Why It Matters, and What to Do about It by Richard V. Reeves",
     authors: "Ричард Ривз",
+    authorsOrig: "Richard V. Reeves",
     tags: ["гендер", "маскулизм", "социология"],
     status: "done",
     cover: "covers/book10.jpeg",
@@ -201,8 +206,9 @@ export const books: Book[] = [
   },
   {
     ru: "Седированный: как современный капитализм создал наш кризис психического здоровья",
-    orig: "Sedated: How Modern Capitalism Created Our Mental Health Crisis",
+    orig: "Sedated: How Modern Capitalism Created Our Mental Health Crisis by James Davies",
     authors: "Джеймс Дэвис",
+    authorsOrig: "James Davies",
     tags: ["психология", "капитализм"],
     status: "done",
     cover: "covers/book2.jpeg",
@@ -242,8 +248,9 @@ export const books: Book[] = [
   },
   {
     ru: "После работы: история дома и борьбы за свободное время",
-    orig: "After Work: The Politics of Free Time",
+    orig: "After Work: The Politics of Free Time by Helen Hester and Nick Srnicek",
     authors: "Хелен Хестер, Ник Срничек",
+    authorsOrig: "Helen Hester and Nick Srnicek",
     tags: ["посттруд", "гендер", "феминизм"],
     status: "done",
     cover: "covers/book8.jpeg",
@@ -282,8 +289,9 @@ export const books: Book[] = [
   },
   {
     ru: "Отказ от работы: теория и практика сопротивления работе",
-    orig: "The Refusal of Work: The Theory and Practice of Resistance to Work",
+    orig: "The Refusal of Work: The Theory and Practice of Resistance to Work by David Frayne",
     authors: "Дэвид Фрейн",
+    authorsOrig: "David Frayne",
     tags: ["антитруд", "посттруд"],
     status: "done",
     cover: "covers/book6.png",
@@ -322,8 +330,9 @@ export const books: Book[] = [
   },
   {
     ru: "Лени не существует",
-    orig: "Laziness Does Not Exist",
+    orig: "Laziness Does Not Exist by Dr. Devon Price",
     authors: "Девон Прайс",
+    authorsOrig: "Dr. Devon Price",
     tags: ["психология", "посттруд"],
     status: "done",
     cover: "covers/book1.png",
@@ -362,8 +371,9 @@ export const books: Book[] = [
   },
   {
     ru: "Экзистенциальная физика",
-    orig: "Existential Physics",
+    orig: "Existential Physics by Sabine Hossenfelder",
     authors: "Сабина Хоссенфельдер",
+    authorsOrig: "Sabine Hossenfelder",
     tags: ["наука", "философия"],
     status: "done",
     cover: "covers/book4.jpg",
@@ -399,8 +409,9 @@ export const books: Book[] = [
   },
   {
     ru: "Четырёхдневная рабочая неделя: как снизить стресс, повысить благополучие и работать умнее",
-    orig: "Four Days a Week: The Life-Changing Solution for Reducing Employee Stress, Improving Well-Being, and Working Smarter",
+    orig: "Four Days a Week: The Life-Changing Solution for Reducing Employee Stress, Improving Well-Being, and Working Smarter by Juliet Schor",
     authors: "Джульет Шор",
+    authorsOrig: "Juliet Schor",
     tags: ["посттруд", "социология"],
     status: "wip",
     cover: "covers/book16.jpeg",
@@ -438,8 +449,9 @@ export const books: Book[] = [
   },
   {
     ru: "Блокчейн-радикалы: как капитализм разрушил крипту и как это исправить",
-    orig: "Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It",
+    orig: "Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It by Joshua Dávila",
     authors: "Джошуа Давила",
+    authorsOrig: "Joshua Dávila",
     tags: ["технологии", "капитализм"],
     status: "wip",
     cover: "covers/book18.jpeg",
@@ -473,8 +485,9 @@ export const books: Book[] = [
   },
   {
     ru: "Сострадательный ум: новый подход к жизненным трудностям",
-    orig: "The Compassionate Mind: A New Approach to Life's Challenges",
+    orig: "The Compassionate Mind: A New Approach to Life's Challenges by Paul Gilbert",
     authors: "Пол Гилберт",
+    authorsOrig: "Paul Gilbert",
     tags: ["психология"],
     status: "wip",
     cover: "covers/book19.jpeg",
@@ -510,8 +523,9 @@ export const books: Book[] = [
   },
   {
     ru: "Рабочие мира: очерки по глобальной истории труда",
-    orig: "Workers of the World, Essays toward a Global Labor History",
+    orig: "Workers of the World, Essays toward a Global Labor History by Marcel Van Der Linden",
     authors: "Марсель Ван Дер Линден",
+    authorsOrig: "Marcel Van Der Linden",
     tags: ["история", "социология"],
     status: "wip",
     cover: "covers/book14.jpeg",
@@ -548,8 +562,9 @@ export const books: Book[] = [
   },
   {
     ru: "Антитруд: психологические исследования",
-    orig: "Anti-Work: Psychological Investigations into Its Truths, Problems, and Solutions",
+    orig: "Anti-Work: Psychological Investigations into Its Truths, Problems, and Solutions by George M. Alliger",
     authors: "Джордж М. Аллигер",
+    authorsOrig: "George M. Alliger",
     tags: ["антитруд", "психология"],
     status: "wip",
     cover: "covers/book15.png",
@@ -586,8 +601,9 @@ export const books: Book[] = [
   },
   {
     ru: "Базовый доход: схватка с восьмью гигантами",
-    orig: "Battling Eight Giants",
+    orig: "Battling Eight Giants by Guy Standing",
     authors: "Гай Стэндинг",
+    authorsOrig: "Guy Standing",
     tags: ["базовый доход", "посттруд"],
     status: "wip",
     cover: "covers/book23.jpeg",
@@ -625,8 +641,9 @@ export const books: Book[] = [
   },
   {
     ru: "Хакерский манифест",
-    orig: "A Hacker Manifesto",
+    orig: "A Hacker Manifesto by McKenzie Wark",
     authors: "Маккензи Уорк",
+    authorsOrig: "McKenzie Wark",
     tags: ["технологии", "капитализм", "марксизм"],
     status: "wip",
     cover: "covers/book11.jpg",
@@ -662,8 +679,9 @@ export const books: Book[] = [
   },
   {
     ru: "Принцип надежды",
-    orig: "The Principle of Hope",
+    orig: "The Principle of Hope by Ernst Bloch",
     authors: "Эрнст Блох",
+    authorsOrig: "Ernst Bloch",
     tags: ["философия"],
     status: "wip",
     cover: "covers/book17.jpeg",
@@ -698,8 +716,9 @@ export const books: Book[] = [
   },
   {
     ru: "Проклятие Голиафа: история и будущее социального коллапса",
-    orig: "Goliath's Curse: The History and Future of Societal Collapse",
+    orig: "Goliath's Curse: The History and Future of Societal Collapse by Luke Kemp",
     authors: "Люк Кемп",
+    authorsOrig: "Luke Kemp",
     tags: ["история"],
     status: "wip",
     cover: "covers/book24.jpg",
@@ -736,8 +755,9 @@ export const books: Book[] = [
   },
   {
     ru: "Конституция знания: защита истины",
-    orig: "The Constitution of Knowledge: A Defense of Truth",
+    orig: "The Constitution of Knowledge: A Defense of Truth by Jonathan Rauch",
     authors: "Джонатан Рауш",
+    authorsOrig: "Jonathan Rauch",
     tags: ["социология"],
     status: "pause",
     cover: "covers/book20.jpeg",
@@ -767,8 +787,9 @@ export const books: Book[] = [
   },
   {
     ru: "Жизнь Малатесты",
-    orig: "Life of Malatesta",
+    orig: "Life of Malatesta by Luigi Fabbri",
     authors: "Луиджи Фаббри",
+    authorsOrig: "Luigi Fabbri",
     tags: ["анархизм", "история"],
     status: "edit",
     cover: "covers/book21.jpg",
@@ -800,8 +821,9 @@ export const books: Book[] = [
   },
   {
     ru: "Признаки Великого Отказа: грядущая борьба за пост-трудовое общество",
-    orig: "Signs of the Great Refusal: The Coming Struggle for a Postwork Society",
+    orig: "Signs of the Great Refusal: The Coming Struggle for a Postwork Society by Tedd Siegel",
     authors: "Тедд Сигел",
+    authorsOrig: "Tedd Siegel",
     tags: ["антитруд", "посттруд", "философия"],
     status: "edit",
     cover: "covers/book12.jpeg",
@@ -837,8 +859,9 @@ export const books: Book[] = [
   },
   {
     ru: "Гордитесь: почему в самом смертном грехе кроется секрет человеческого успеха",
-    orig: "Take Pride: Why the Deadliest Sin Holds the Secret to Human Success",
+    orig: "Take Pride: Why the Deadliest Sin Holds the Secret to Human Success by Jessica Tracy",
     authors: "Джессика Трейси",
+    authorsOrig: "Jessica Tracy",
     tags: ["психология"],
     status: "edit",
     cover: "covers/book22.jpeg",
@@ -870,8 +893,9 @@ export const books: Book[] = [
   },
   {
     ru: "Слезы: естественная и культурная история плача",
-    orig: "A Natural and Cultural History of Tears",
+    orig: "A Natural and Cultural History of Tears by Tom Lutz",
     authors: "Том Лутц",
+    authorsOrig: "Tom Lutz",
     tags: ["психология", "маскулизм", "история"],
     status: "wip",
     cover: "covers/book13.jpeg",
@@ -906,8 +930,9 @@ export const books: Book[] = [
   },
   {
     ru: "Непостижимая эффективность математики",
-    orig: "The Unreasonable Effectiveness of Mathematics",
+    orig: "The Unreasonable Effectiveness of Mathematics by R. W. Hamming",
     authors: "Ричард Хэмминг",
+    authorsOrig: "R. W. Hamming",
     tags: ["наука", "философия"],
     status: "done",
     cover: "covers/book7.png",
