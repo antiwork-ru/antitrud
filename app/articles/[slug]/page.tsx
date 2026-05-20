@@ -27,13 +27,18 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const article = articles.find((a) => a.slug === slug);
+    const pageUrl = `https://antitrud.vercel.app/articles/${slug}/`;
     if (!article) return {};
     return {
         title: `${article.title} – антитруд.`,
         description: article.description,
+        alternates: {
+            canonical: pageUrl,
+        },
         openGraph: {
             title: article.title,
             description: article.description,
+            url: pageUrl,
             images: [article.imageUrl],
         },
     };

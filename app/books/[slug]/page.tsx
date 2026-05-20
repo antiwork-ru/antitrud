@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!book) return {};
 
   const coverUrl = book.cover ? `${BOOKS_BASE_URL}${book.cover}` : undefined;
+  const pageUrl = `https://antitrud.vercel.app/books/${slug}/`;
 
   return {
     title: `${book.ru} (${book.orig}) – ${book.authors}${book.authorsOrig ? ` (${book.authorsOrig})` : ''} | антитруд. переводы`,
@@ -32,13 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       book.description ??
       `Русский перевод книги ${book.authorsOrig} «${book.orig}». Читайте на антитруд. переводы.`,
     alternates: {
-      canonical: `https://antitrud.vercel.app/${slug}/`,
+      canonical: pageUrl,
     },
     openGraph: {
       type: "article",
       title: `${book.ru} – ${book.authors}`,
       description: book.description,
-      url: `https://antitrud.vercel.app/${slug}/`,
+      url: pageUrl,
       ...(coverUrl
         ? { images: [{ url: coverUrl, width: 800, height: 1200, alt: book.ru }] }
         : {}),
