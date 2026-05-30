@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!book) return {};
 
   const coverUrl = book.cover ? `${BOOKS_BASE_URL}${book.cover}` : undefined;
-  const pageUrl = `https://antitrud.vercel.app/books/${slug}/`;
+  const pageUrl = `https://antitrud.vercel.app/books/${slug}`;
 
   return {
     title: `${book.ru} (${book.orig}) – ${book.authors}${book.authorsOrig ? ` (${book.authorsOrig})` : ''} | антитруд. переводы`,
