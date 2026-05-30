@@ -8,6 +8,7 @@ import { StartSection } from "../components/StartSection";
 import Headline from '../components/Headline';
 import { Badge } from '../components/Badge';
 import NewsTicker from '../components/NewsTicker';
+import { Suspense } from 'react';
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
         <Hero quote={<QuoteCard />} />
         <Hero2 quote={<QuoteCard />} />
         <StartSection />
-        <LibrarySection />
+        <Suspense fallback={<div>Загрузка библиотеки...</div>}>
+          <LibrarySection />
+        </Suspense>
       </main>
       <SiteFooter />
     </div>
