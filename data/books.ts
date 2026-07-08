@@ -720,7 +720,7 @@ export const books: Book[] = [
     authors: "Люк Кемп",
     authorsOrig: "Luke Kemp",
     tags: ["история"],
-    status: "wip",
+    status: "edit",
     cover: "covers/book24.jpg",
     tt: "https://teletype.in/@antitrud_ru/collapse",
     url: "luke-kemp-goliath",

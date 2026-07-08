@@ -31,7 +31,7 @@ export function Hero2({ quote }: { quote: React.ReactNode }) {
                             Проклятие Голиафа: история и будущее социального коллапса
                         </div>
                         <div className="mt-1 font-mono text-[11px] text-neutral-400">
-                            Люк Кемп · май 2026 · в процессе
+                            Люк Кемп · июль 2026 · на редактуре
                         </div>
                         <a
                             href="books/luke-kemp-goliath"
