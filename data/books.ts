@@ -46,7 +46,7 @@ export const books: Book[] = [
     cover: "covers/book9.jpg",
     epub: "https://drive.google.com/file/d/1p7ssAOxrmV7QTBH4kKugLGujvWZIeC0s/view",
     pdf: "https://drive.google.com/file/d/1mKkAYOHq54Vog6f6c3FM-G7Ny1pcooWa/view",
-    tt: "https://teletype.in/@antitrud_ru/debating_post-work",
+    tt: "https://teletype.media/@antitrud_ru/debating_post-work",
     url: "post-work-futures",
     slug: "post-work-futures",
     description:
@@ -89,7 +89,7 @@ export const books: Book[] = [
     cover: "covers/book3.jpeg",
     epub: "https://drive.google.com/file/d/19ATkTJ9Ictm5D1E_WKS95JU_XWuXzHR8/view",
     pdf: "https://drive.google.com/file/d/1TXOtXmh5t8v1wCUF42oC_y9piylRkU5p/view",
-    tt: "https://teletype.in/@antitrud_ru/kathi_weeks",
+    tt: "https://teletype.media/@antitrud_ru/kathi_weeks",
     url: "kathi-weeks",
     slug: "kathi-weeks",
     description:
@@ -132,7 +132,7 @@ export const books: Book[] = [
     cover: "covers/book5.jpeg",
     epub: "https://drive.google.com/file/d/1Y76-7gUgfQ2GPs9eTyH0XaYqsyu-_C0S/view",
     pdf: "https://drive.google.com/file/d/1v2HiZ2xQ8WXhtysw5Uz7fWTThslITMCE/view",
-    tt: "https://teletype.in/@antitrud_ru/french_critique",
+    tt: "https://teletype.media/@antitrud_ru/french_critique",
     url: "alastair-hemmens",
     slug: "alastair-hemmens",
     description:
@@ -174,7 +174,7 @@ export const books: Book[] = [
     cover: "covers/book10.jpeg",
     epub: "https://drive.google.com/file/d/1D2_ocw6dcj2Hq-6yJJycf6CCqq3vjcLD/view",
     pdf: "https://drive.google.com/file/d/159k4Cvw2vHTNoxsNPOYV7_aJCrVB2ejx/view",
-    tt: "https://teletype.in/@antitrud_ru/of_boys_and_men",
+    tt: "https://teletype.media/@antitrud_ru/of_boys_and_men",
     url: "richard-reeves",
     slug: "richard-reeves",
     description:
@@ -214,7 +214,7 @@ export const books: Book[] = [
     cover: "covers/book2.jpeg",
     epub: "https://drive.google.com/file/d/1EpGbeslJbW9pZJp-AsYaa9SpO9Xyo08h/view",
     pdf: "https://drive.google.com/file/d/12Y7P_US0pbnM90UjHWgZLO-Kk0P_Cxlq/view",
-    tt: "https://teletype.in/@antitrud_ru/sedated",
+    tt: "https://teletype.media/@antitrud_ru/sedated",
     url: "james-davies-sedated",
     slug: "james-davies-sedated",
     description:
@@ -256,7 +256,7 @@ export const books: Book[] = [
     cover: "covers/book8.jpeg",
     epub: "https://drive.google.com/file/d/1n-ZuisaI2339Hi8a7NhR2uU3fsl-BT-r/view",
     pdf: "https://drive.google.com/file/d/1Mv62qGngVFi64IxiACV3QWWOqfvx0xqk/view",
-    tt: "https://teletype.in/@antitrud_ru/after_work",
+    tt: "https://teletype.media/@antitrud_ru/after_work",
     url: "after-work",
     slug: "after-work",
     description:
@@ -297,7 +297,7 @@ export const books: Book[] = [
     cover: "covers/book6.png",
     epub: "https://drive.google.com/file/d/1YCHgHtkJBOSUVLyhQsMw7A7m2pmOFLez/view",
     pdf: "https://drive.google.com/file/d/1UA8xRFENhvZ4fkN8HgesUE0IXwOVaXY7/view",
-    tt: "https://teletype.in/@antitrud_ru/refusal_of_work",
+    tt: "https://teletype.media/@antitrud_ru/refusal_of_work",
     url: "david-frayne",
     slug: "david-frayne",
     description:
@@ -338,7 +338,7 @@ export const books: Book[] = [
     cover: "covers/book1.png",
     epub: "https://drive.google.com/file/d/1yhOcD8MXYhsJLxkXBGyWa0TPLk-3w9xr/view",
     pdf: "https://drive.google.com/file/d/1toGQumutR0LgdIgGgILlDogCQzvrrFe_/view",
-    tt: "https://teletype.in/@antitrud_ru/laziness_does_not_exist",
+    tt: "https://teletype.media/@antitrud_ru/laziness_does_not_exist",
     url: "devon-price-laziness",
     slug: "devon-price-laziness",
     description:
@@ -379,7 +379,7 @@ export const books: Book[] = [
     cover: "covers/book4.jpg",
     epub: "https://drive.google.com/file/d/1ywpTKvwFLy6LXyU257r40xtwE01KoDZr/view",
     pdf: "https://drive.google.com/file/d/10NBIOYxbtLov_vTwRVYlruWsAQxkyRe5/view",
-    tt: "https://teletype.in/@antitrud_ru/existensial_physics",
+    tt: "https://teletype.media/@antitrud_ru/existensial_physics",
     url: "sabine-hossenfelder",
     slug: "sabine-hossenfelder",
     description:
@@ -415,7 +415,7 @@ export const books: Book[] = [
     tags: ["посттруд", "социология"],
     status: "wip",
     cover: "covers/book16.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/4daysaweek",
+    tt: "https://teletype.media/@antitrud_ru/4daysaweek",
     url: "juliet-schor",
     slug: "juliet-schor",
     description:
@@ -455,7 +455,7 @@ export const books: Book[] = [
     tags: ["технологии", "капитализм"],
     status: "wip",
     cover: "covers/book18.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/blockchain",
+    tt: "https://teletype.media/@antitrud_ru/blockchain",
     url: "joshua-davila",
     slug: "joshua-davila",
     description:
@@ -491,7 +491,7 @@ export const books: Book[] = [
     tags: ["психология"],
     status: "wip",
     cover: "covers/book19.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/compassion",
+    tt: "https://teletype.media/@antitrud_ru/compassion",
     url: "paul-gilbert",
     slug: "paul-gilbert",
     description:
@@ -529,7 +529,7 @@ export const books: Book[] = [
     tags: ["история", "социология"],
     status: "wip",
     cover: "covers/book14.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/global_labor_history",
+    tt: "https://teletype.media/@antitrud_ru/global_labor_history",
     url: "marcel-van-der-linden",
     slug: "marcel-van-der-linden",
     description:
@@ -568,7 +568,7 @@ export const books: Book[] = [
     tags: ["антитруд", "психология"],
     status: "wip",
     cover: "covers/book15.png",
-    tt: "https://teletype.in/@antitrud_ru/alliger_antiwork",
+    tt: "https://teletype.media/@antitrud_ru/alliger_antiwork",
     url: "george-alliger-antiwork",
     slug: "george-alliger-antiwork",
     description:
@@ -607,7 +607,7 @@ export const books: Book[] = [
     tags: ["базовый доход", "посттруд"],
     status: "wip",
     cover: "covers/book23.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/basicincome",
+    tt: "https://teletype.media/@antitrud_ru/basicincome",
     url: "guy-standing-basic-income",
     slug: "guy-standing-basic-income",
     description:
@@ -647,7 +647,7 @@ export const books: Book[] = [
     tags: ["технологии", "капитализм", "марксизм"],
     status: "wip",
     cover: "covers/book11.jpg",
-    tt: "https://teletype.in/@antitrud_ru/hacker_manifesto",
+    tt: "https://teletype.media/@antitrud_ru/hacker_manifesto",
     url: "mckenzie-wark",
     slug: "mckenzie-wark",
     description:
@@ -685,7 +685,7 @@ export const books: Book[] = [
     tags: ["философия"],
     status: "wip",
     cover: "covers/book17.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/hope",
+    tt: "https://teletype.media/@antitrud_ru/hope",
     url: "ernst-bloch",
     slug: "ernst-bloch",
     description:
@@ -722,7 +722,7 @@ export const books: Book[] = [
     tags: ["история"],
     status: "edit",
     cover: "covers/book24.jpg",
-    tt: "https://teletype.in/@antitrud_ru/collapse",
+    tt: "https://teletype.media/@antitrud_ru/collapse",
     url: "luke-kemp-goliath",
     slug: "luke-kemp-goliath",
     description:
@@ -761,7 +761,7 @@ export const books: Book[] = [
     tags: ["социология"],
     status: "pause",
     cover: "covers/book20.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/constitution",
+    tt: "https://teletype.media/@antitrud_ru/constitution",
     slug: "jonathan-rauch",
     description:
       "Джонатан Рауш исследует институты, которые позволяют обществу отличать истину от дезинформации, и показывает, почему они находятся под угрозой.",
@@ -793,7 +793,7 @@ export const books: Book[] = [
     tags: ["анархизм", "история"],
     status: "edit",
     cover: "covers/book21.jpg",
-    tt: "https://teletype.in/@antitrud_ru/malatesta",
+    tt: "https://teletype.media/@antitrud_ru/malatesta",
     url: "luigi-fabbri",
     slug: "luigi-fabbri",
     description:
@@ -827,7 +827,7 @@ export const books: Book[] = [
     tags: ["антитруд", "посттруд", "философия"],
     status: "edit",
     cover: "covers/book12.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/tedd_siegel",
+    tt: "https://teletype.media/@antitrud_ru/tedd_siegel",
     url: "tedd-siegel",
     slug: "tedd-siegel",
     description:
@@ -865,7 +865,7 @@ export const books: Book[] = [
     tags: ["психология"],
     status: "edit",
     cover: "covers/book22.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/pride",
+    tt: "https://teletype.media/@antitrud_ru/pride",
     slug: "jessica-tracy",
     description:
       "Джессика Трейси исследует гордость как одну из сложнейших человеческих эмоций, показывая её двойственную природу: как источника мотивации и как потенциально разрушительного нарциссизма.",
@@ -899,7 +899,7 @@ export const books: Book[] = [
     tags: ["психология", "маскулизм", "история"],
     status: "wip",
     cover: "covers/book13.jpeg",
-    tt: "https://teletype.in/@antitrud_ru/crying",
+    tt: "https://teletype.media/@antitrud_ru/crying",
     url: "tom-lutz-tears",
     slug: "tom-lutz-tears",
     description:
@@ -936,7 +936,7 @@ export const books: Book[] = [
     tags: ["наука", "философия"],
     status: "done",
     cover: "covers/book7.png",
-    tt: "https://teletype.in/@antitrud_ru/cZMNDB5T_pv",
+    tt: "https://teletype.media/@antitrud_ru/cZMNDB5T_pv",
     slug: "richard-hamming",
     description:
       "Ричард Хэмминг исследует загадочный вопрос: почему математика, созданная человеческим разумом, так точно описывает физическую реальность?",

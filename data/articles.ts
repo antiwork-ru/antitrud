@@ -32,7 +32,7 @@ export const articles: Article[] = [
             "Анализ глобальных тенденций: доля трудовых доходов, занятость молодёжи и прогресс в достижении ЦУР к 2030 году.",
         imageUrl:
             "/covers/publ2.jpg",
-        externalUrl: "https://teletype.in/@antitrud_ru/1GVSPy8OtS-",
+        externalUrl: "https://teletype.media/@antitrud_ru/1GVSPy8OtS-",
         slug: "ilo-2024",
         subtitle:
             "Данные и выводы Международной организации труда (ILO) по занятости в социальной сфере за 2024 год.",
@@ -430,7 +430,7 @@ export const articles: Article[] = [
             "Гендерные причины домашнего насилия: разговор с Эрин Пицци – основательницей одного из первых приютов для жертв насилия.",
         imageUrl:
             "/covers/publ4.png",
-        externalUrl: "https://teletype.in/@antitrud_ru/the_big_lie",
+        externalUrl: "https://teletype.media/@antitrud_ru/the_big_lie",
         slug: "big-lie",
         subtitle:
             "Гендерные причины домашнего насилия: разговор с Эрин Пицци – основательницей одного из первых в мире приютов для жертв насилия.",
@@ -1200,7 +1200,7 @@ export const articles: Article[] = [
             "Обращение международных исследователей: экологический кризис, неравенство и призыв к коллективным действиям.",
         imageUrl:
             "/covers/publ5.png",
-        externalUrl: "https://teletype.in/@antitrud_ru/AtyX84JUn1P",
+        externalUrl: "https://teletype.media/@antitrud_ru/AtyX84JUn1P",
         slug: "letter-to-citizens",
         subtitle:
             "Экологические вопросы требуют немедленного участия всех людей на планете.",
@@ -1331,7 +1331,7 @@ export const articles: Article[] = [
             "Почему наука при всём росте числа публикаций продвигается вперёд всё медленнее.",
         imageUrl:
             "/covers/publ1.png",
-        externalUrl: "https://teletype.in/@antitrud_ru/science",
+        externalUrl: "https://teletype.media/@antitrud_ru/science",
         slug: "science-progress",
         subtitle:
             "Действительно ли наука движется вперёд так, как нас в этом убедили?",
@@ -1517,7 +1517,7 @@ export const articles: Article[] = [
             "Данные и выводы крупнейшего эксперимента по сокращению рабочей недели.",
         imageUrl:
             "/covers/publ3.png",
-        externalUrl: "https://teletype.in/@antitrud_ru/4day_Iceland",
+        externalUrl: "https://teletype.media/@antitrud_ru/4day_Iceland",
         slug: "4-day-week",
         subtitle:
             "Данные и выводы крупнейшего эксперимента по сокращению рабочей недели: что изменилось для работников и работодателей.",
