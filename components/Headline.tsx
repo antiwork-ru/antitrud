@@ -28,7 +28,7 @@ export default function Headline() {
                 >
 
                     <span className="text-[color:var(--accent)]  decoration-2 underline-offset-8">
-                        что{" "} не так с работой
+                        что{" "} не так с работой (и миром)
                     </span>
                 </motion.div>
 
