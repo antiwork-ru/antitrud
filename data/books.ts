@@ -645,8 +645,10 @@ export const books: Book[] = [
     authors: "Маккензи Уорк",
     authorsOrig: "McKenzie Wark",
     tags: ["технологии", "капитализм", "марксизм"],
-    status: "wip",
-    cover: "covers/book11.jpg",
+    status: "done",
+    cover: "covers/book11.png",
+    epub: "https://drive.google.com/file/d/1QsgdSlwSWKbvi6UUrfjMJMEFiYFRB3Vx/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1YzJ3uS_IW0ljDPeIaSWHlwRc1xcNpm8x/view?usp=sharing",
     tt: "https://teletype.media/@antitrud_ru/hacker_manifesto",
     url: "mckenzie-wark",
     slug: "mckenzie-wark",
@@ -665,7 +667,7 @@ export const books: Book[] = [
       "политика доступа к информации",
     ],
     quote:
-      "«Хакер – это тот, кто создаёт новые возможности из информации, но не обязательно владеет ими».",
+      "«Хакеры не присоединяются. Мы не часто готовы к слиянию нашей сингулярности».",
     whyImportant: [
       "AI и автоматизация знаний",
       "экономика платформ (Big Tech)",
