@@ -15,7 +15,7 @@ export default function Headline() {
                     transition={{ duration: 0.8 }}
                     className="text-[clamp(2rem,5vw,3.75rem)] text-center md:text-left md:self-start w-full md:w-auto"
                 >
-                    Размышляем,
+                    Размышляем
                 </motion.div>
 
                 {/* Вторая фраза - центр */}
@@ -28,7 +28,7 @@ export default function Headline() {
                 >
 
                     <span className="text-[color:var(--accent)]  decoration-2 underline-offset-8">
-                        что{" "} не так с работой (и миром)
+                        о мире без работы
                     </span>
                 </motion.div>
 
@@ -42,7 +42,7 @@ export default function Headline() {
                     // На десктопе (md): w-auto, text-right (текст вправо), self-end (блок в конец)
                     className="text-[clamp(2rem,5vw,3.75rem)] w-full md:w-auto self-center md:self-end text-center md:text-right"
                 >
-                    <span className="hidden md:inline">—</span> и что нам с этим делать
+                    <span className="hidden md:inline"></span> и нашем будущем
                 </motion.div>
 
             </section></div>
