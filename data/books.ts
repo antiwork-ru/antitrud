@@ -43,7 +43,7 @@ export const books: Book[] = [
     authorsOrig: "Denise Celentano, Michael Cholbi",
     tags: ["посттруд", "антитруд", "философия"],
     status: "done",
-    cover: "covers/book9.jpg",
+    cover: "covers/book9.png",
     epub: "https://drive.google.com/file/d/1p7ssAOxrmV7QTBH4kKugLGujvWZIeC0s/view",
     pdf: "https://drive.google.com/file/d/1mKkAYOHq54Vog6f6c3FM-G7Ny1pcooWa/view",
     tt: "https://teletype.media/@antitrud_ru/debating_post-work",
