@@ -41,13 +41,13 @@ export function Hero2({ quote }: { quote: React.ReactNode }) {
                         </a>
 
                         <div className="text-sm font-semibold text-neutral-950 leading-snug">
-                            Хакерский манифест
+                            Влияние психопатов: почему люди лучше, чем мы думаем
                         </div>
                         <div className="mt-1 font-mono text-[11px] text-neutral-400">
-                            Маккензи Уорк · сентябрь 2026 · готово
+                            The Great Simplification with Nate Hagens · октябрь 2026 · готово
                         </div>
                         <a
-                            href="books/mckenzie-wark"
+                            href="articles/psycopathic-influence"
                             className="mt-2 inline-flex text-[13px] font-medium text-[color:var(--accent)] hover:underline"
                         >
                             Читать →

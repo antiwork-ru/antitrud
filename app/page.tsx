@@ -15,7 +15,7 @@ export default function Home() {
     <div className="flex flex-1 flex-col bg-[color:var(--surface)]">
       <SiteHeader />
       <main className="flex-1 bg-[color:var(--surface)]">
-        <Badge />
+        {/* <Badge /> */}
         <Headline />
         <Hero quote={<QuoteCard />} />
         <Hero2 quote={<QuoteCard />} />

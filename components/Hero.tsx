@@ -46,15 +46,15 @@ export function Hero({ quote }: { quote: React.ReactNode }) {
             </div>
           </div> */}
 
-            <p className="mt-0  text-base leading-relaxed text-neutral-500 font-light text-center">
+            {/* <p className="mt-0  text-base leading-relaxed text-neutral-500 font-light text-center">
               Книги и тексты на русском языке о критике труда, посттрудовом
               обществе, базовом доходе и свободе от принудительной продуктивности, а также многом другом (и это «также» может превалировать): читаем, получаем удовольствие и меняем себя и мир вокруг.
 
-            </p>
+            </p> */}
 
 
             {/* CTA row */}
-            <div className="mt-8 flex flex-wrap gap-6 justify-center">
+            <div className="mt-2 flex flex-wrap gap-6 justify-center">
               <a
                 href="#biblioteka"
                 className="inline-flex items-center gap-2 rounded-lg bg-[color:var(--foreground)] px-5 py-2.5 text-sm font-medium text-white hover:bg-[color:var(--accent)] transition-colors"

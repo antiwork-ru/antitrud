@@ -1,50 +1,122 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import type { ReactNode } from 'react';
 
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const wordReveal = {
+    hidden: { y: '110%' },
+    show: (i: number) => ({
+        y: 0,
+        transition: { duration: 0.95, ease: EASE, delay: 0.05 + i * 0.07 },
+    }),
+};
+
+function Word({
+    children,
+    i,
+    className = '',
+}: {
+    children: ReactNode;
+    i: number;
+    className?: string;
+}) {
+    return (
+        <span className="inline-block overflow-hidden align-bottom pb-[0.15em] -mb-[0.15em]">
+            <motion.span
+                custom={i}
+                variants={wordReveal}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, margin: '-80px' }}
+                className={`inline-block ${className}`}
+            >
+                {children}
+            </motion.span>
+        </span>
+    );
+}
 
 export default function Headline() {
     return (
-        <div className='bg-[color:var(--surface) '>
-            <section className=" flex flex-col gap-2 [word-spacing:-0.2em] w-full max-w-[75rem] mx-auto py-0 px-0 font-bold leading-[1.05] tracking-[-0.03em] text-neutral-950 ">
-                {/* Первая фраза - слева */}
+        <div className="relative overflow-hidden bg-[var(--surface)]">
+            {/* Noise overlay */}
+            <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 opacity-[0.04] mix-blend-multiply"
+                style={{
+                    backgroundImage:
+                        "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+                }}
+            />
+
+            {/* ↓ Только вертикальные отступы уменьшены; горизонтальные (px-6) не тронуты */}
+            <section className="relative mx-auto w-full max-w-[75rem] px-6 py-12 md:py-16">
+                {/* Top meta row */}
                 <motion.div
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="text-[clamp(2rem,5vw,3.75rem)] text-center md:text-left md:self-start w-full md:w-auto"
+                    transition={{ duration: 0.7, ease: EASE }}
+                    className="mb-10 flex items-center justify-between font-mono text-[0.68rem] uppercase tracking-[0.22em] text-neutral-500 md:mb-14"
                 >
-                    Размышляем
+                    <div className="flex items-center gap-3">
+                        <span className="inline-block size-1.5 rounded-full bg-[var(--accent)]" />
+                        Независимый проект
+
+                    </div>
+
+                    <span className="hidden md:inline">Est. 2023 · ru</span>
                 </motion.div>
 
-                {/* Вторая фраза - центр */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-[clamp(2rem,5vw,3.75rem)] self-center text-center"
-                >
-
-                    <span className="text-[color:var(--accent)]  decoration-2 underline-offset-8">
-                        о мире без работы
+                {/* Headline */}
+                <h1 className="font-bold tracking-[-0.045em] text-neutral-950 text-[clamp(2.5rem,7.2vw,5.5rem)] leading-[0.95]">
+                    <span className="block">
+                        <Word i={0}>Размышляем</Word>
                     </span>
-                </motion.div>
 
-                {/* Третья фраза - справа */}
+                    <span className="mt-2 block">
+                        <Word i={1}>о мире</Word>{' '}
+                        <Word
+                            i={2}
+                            className="font-serif italic font-normal text-[color:var(--accent)]"
+                        >
+                            без&nbsp;работы
+                        </Word>
+                    </span>
+
+                    <span className="mt-2 block text-neutral-300">
+                        <Word i={3}>и нашем</Word>{' '}
+                        <Word i={4} className="text-transparent">
+                            <span style={{ WebkitTextStroke: '1.5px #171717' }}>будущем</span>
+                        </Word>
+                    </span>
+                </h1>
+
+                {/* Bottom row */}
                 <motion.div
-                    initial={{ opacity: 0, x: 30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    // По умолчанию: w-full (на всю ширину), text-center (текст по центру), self-center (блок по центру)
-                    // На десктопе (md): w-auto, text-right (текст вправо), self-end (блок в конец)
-                    className="text-[clamp(2rem,5vw,3.75rem)] w-full md:w-auto self-center md:self-end text-center md:text-right"
+                    transition={{ duration: 0.9, ease: EASE, delay: 0.9 }}
+                    className="mt-12 flex flex-col gap-6 border-t border-neutral-200 pt-6 md:mt-16"
                 >
-                    <span className="hidden md:inline"></span> и нашем будущем
+                    <p className="w-full text-sm leading-relaxed text-neutral-500">
+                        Книги и тексты на русском языке о критике труда, посттрудовом
+                        обществе, базовом доходе и свободе от принудительной продуктивности, а также многом другом (и это «также» может превалировать): читаем, получаем удовольствие и меняем себя и мир вокруг.
+                    </p>
+                    {/* <div className="flex items-center gap-2 font-mono text-[0.68rem] uppercase tracking-[0.22em] text-neutral-500">
+                        <span>Scroll</span>
+                        <motion.span
+                            animate={{ y: [0, 4, 0] }}
+                            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
+                        >
+                            ↓
+                        </motion.span>
+                    </div> */}
                 </motion.div>
-
-            </section></div>
+            </section>
+        </div>
     );
 }
