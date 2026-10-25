@@ -54,7 +54,7 @@ export function Hero({ quote }: { quote: React.ReactNode }) {
 
 
             {/* CTA row */}
-            <div className="mt-2 flex flex-wrap gap-6 justify-center">
+            <div className="-mt-2 flex flex-wrap gap-6 justify-center">
               <a
                 href="#biblioteka"
                 className="inline-flex items-center gap-2 rounded-lg bg-[color:var(--foreground)] px-5 py-2.5 text-sm font-medium text-white hover:bg-[color:var(--accent)] transition-colors"

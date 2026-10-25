@@ -73,21 +73,27 @@ export default function Headline() {
                 {/* Headline */}
                 <h1 className="font-bold tracking-[-0.045em] text-neutral-950 text-[clamp(2.5rem,7.2vw,5.5rem)] leading-[0.95]">
                     <span className="block">
-                        <Word i={0}>Размышляем</Word>
+                        <Word i={0} className="text-transparent">
+                            <span style={{ WebkitTextStroke: '1.5px #171717' }}>Размышляем</span>
+                        </Word>
                     </span>
 
                     <span className="mt-2 block">
-                        <Word i={1}>о мире</Word>{' '}
-                        <Word
-                            i={2}
-                            className="font-serif italic font-normal text-[color:var(--accent)]"
-                        >
-                            без&nbsp;работы
+                        <Word i={1} className="text">
+                            <span style={{ WebkitTextStroke: '1.5px #171717' }}>о мире-</span>
+                        </Word>
+                        <Word i={1} className="text">
+                            <span style={{ WebkitTextStroke: '1.5px #171717', WebkitTextFillColor: 'red', color: 'red' }}>
+                                без-работы
+                            </span>
                         </Word>
                     </span>
 
                     <span className="mt-2 block text-neutral-300">
-                        <Word i={3}>и нашем</Word>{' '}
+                        <Word i={3} className="text-transparent">
+                            <span style={{ WebkitTextStroke: '1.5px #171717' }}>и нашем </span>
+                        </Word>
+                        &nbsp;
                         <Word i={4} className="text-transparent">
                             <span style={{ WebkitTextStroke: '1.5px #171717' }}>будущем</span>
                         </Word>
