@@ -56,7 +56,7 @@ export default function RootLayout({
       lang="ru" data-scroll-behavior="smooth"
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}
+      <body className="min-h-full flex flex-col ">{children}
         <Analytics />
         <SpeedInsights />
       </body>

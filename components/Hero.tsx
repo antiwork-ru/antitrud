@@ -32,7 +32,7 @@ export function Hero({ quote }: { quote: React.ReactNode }) {
                                 Локальное (inset-x-8), не фон на весь блок. */}
               <div
                 aria-hidden
-                className="pointer-events-none absolute -inset-x-8 -top-6 -bottom-6 -z-10 opacity-80 blur-2xl sm:-inset-x-14"
+                className="pointer-events-none absolute inset-x-0 -top-6 -bottom-6 -z-10 opacity-80 blur-2xl"
                 style={{
                   background:
                     'radial-gradient(ellipse 55% 90% at 30% 50%, color-mix(in oklab, var(--accent) 16%, transparent), transparent 70%)',
