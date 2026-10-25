@@ -3,9 +3,13 @@ import Link from "next/link";
 import NewsTicker from "../components/NewsTicker";
 
 export function Hero2({ quote }: { quote: React.ReactNode }) {
+
     return (
+
         <section id="hero" className="border-b border-[color:var(--border)] bg-[color:var(--surface)]">
+
             <Container>
+
 
                 {/* Bottom band: stats + latest update + quote */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 border-t border-[color:var(--border)] divide-y sm:divide-y-0 sm:divide-x divide-[color:var(--border)]">

@@ -41,6 +41,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, 'Helvetica Neue', sans-serif;
   letter-spacing: -0.01em;
+
 }
 
 @layer base {

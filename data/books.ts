@@ -372,7 +372,7 @@ export const books: Book[] = [
     authors: "Джульет Шор",
     authorsOrig: "Juliet Schor",
     tags: ["посттруд", "социология"],
-    status: "wip",
+    status: "edit",
     cover: "covers/book16.jpeg",
     tt: "https://teletype.media/@antitrud_ru/4daysaweek",
     url: "juliet-schor",
