@@ -120,10 +120,10 @@ export default function Headline() {
                         className="mt-8 flex flex-col gap-2.5 border-t border-neutral-200/70 pt-5 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-neutral-500 sm:mt-14 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:text-[0.7rem] sm:tracking-[0.22em]"
                     >
                         <span>Est. 2023</span>
-                        <span className="flex items-center gap-2">
+                        {/* <span className="flex items-center gap-2">
                             <span className="h-1 w-1 rounded-full bg-[color:var(--accent)]" />
                             Обновляется еженедельно
-                        </span>
+                        </span> */}
                     </motion.div>
                 </motion.div>
             </section>
