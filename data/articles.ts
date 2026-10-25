@@ -23,7 +23,7 @@ export type Article = {
 
 export const articles: Article[] = [
     {
-        title: "Труд и язык: землетрясения как горы, которые «трудятся и рожают»",
+        title: "Труд и язык: землетрясения – это горы, которые «трудятся и рожают»",
         source: "Andrea Komlosy: Work – The Last 1000 Years",
         type: "a",
         typeLabel: "Статья",
