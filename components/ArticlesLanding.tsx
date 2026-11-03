@@ -110,7 +110,7 @@ export function ArticlesLanding() {
                             </div>
 
                             {/* Glossary — sidebar on lg */}
-                            <div className="hidden lg:block">
+                            <div>
                                 <GlossaryCard />
                             </div>
                         </div>
