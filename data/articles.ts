@@ -115,6 +115,7 @@ export const articles: Article[] = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <p></p>
 <p>Это не просто теоретические курьезы. Большие языковые модели (LLM) преодолели критический порог своих возможностей. Такие системы, как GPT-4 (<a href="#bib.bib55">OpenAI, 2023</a>) и Claude (<a href="#bib.bib2">Anthropic, 2024</a>), наряду с их аналогами с открытым исходным кодом, теперь пишут готовое к эксплуатации программное обеспечение с помощью ИИ-агентов для кодинга, таких как GitHub Copilot и Claude Code; составляют юридические контракты и обобщают прецедентное право за долю от стоимости услуг юристов-людей; анализируют медицинские изображения с точностью, соответствующей специалистам или превосходящей их; генерируют финансовые отчеты и выявляют паттерны мошенничества в массивных наборах данных; а также помогают в выдвижении гипотез, планировании экспериментов и анализе данных во всех научных дисциплинах.</p>
@@ -159,6 +160,7 @@ export const articles: Article[] = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <p></p>
 
@@ -270,6 +272,7 @@ export const articles: Article[] = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <p></p>
 
@@ -346,6 +349,7 @@ export const articles: Article[] = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2>5 Эмпирические свидетельства: общие ресурсы, которые работают</h2>
 <p>Концепция, построенная на заботе и сотрудничестве, может показаться идеалистической. Однако эмпирические доказательства этого весьма обширны. Мы представляем пять тематических исследований (case studies), охватывающих различные сферы, масштабы и географические регионы. Все они демонстрируют, что основанные на общем достоянии децентрализованные кооперативные системы <i>уже успешно работают в больших масштабах.</i></p>
@@ -403,6 +407,7 @@ export const articles: Article[] = [
         </tr>
     </tbody>
 </table>
+</div>
 <p></p>
 
 <p>С 2012 года в Рожаве (регионе с преимущественно курдским населением) реализуется система <i>демократического конфедерализма</i>, вдохновленная либертарным муниципализмом Букчина (<a href="#bib.bib53">Ocalan, 2011</a>). Управление организовано через систему многоуровневых советов (коммуна, район, округ, кантон) с обязательным гендерным паритетом (сопредседатели обоих полов на каждом уровне) и этническим представительством (<a href="#bib.bib39">Knapp et al., 2016</a>). Население численностью около 4 миллионов человек управляет собой без участия государства в самом центре зоны военных действий. Опыт Рожавы доказывает, что федеративное, негосударственное, радикально-демократическое управление возможно в масштабах миллионов людей даже в условиях крайних потрясений. Если это работает во время гражданской войны, это сможет работать и в мирное время.</p>
@@ -459,6 +464,7 @@ export const articles: Article[] = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <p></p>
 
@@ -516,6 +522,7 @@ export const articles: Article[] = [
         </tr>
     </tbody>
 </table>
+</div>
 
 <p></p>
 
@@ -536,95 +543,95 @@ export const articles: Article[] = [
 <p>Давайте построим его с заботой. Давайте построим его с любовью. Давайте построим его ради общего блага.</p>
 
 <h2>Примечания</h2>
-<ul class="ref-list">
-    <li id="bib.bib1">Altieri and Nicholls (2012) M. A. Altieri and C. I. Nicholls Agroecology and the search for a truly sustainable agriculture. UNEP, Mexico City. Cited by: §3, §4.</li>
-    <li id="bib.bib2">Anthropic (2024) Anthropic The Claude model family. Note: https://www.anthropic.com/research Accessed February 2026 Cited by: §2.</li>
-    <li id="bib.bib3">Baig et al. (2015) R. Baig, R. Roca, F. Freitag, and L. Navarro Guifi.net, a crowdsourced network infrastructure held in common. Computer Networks 90, pp. 150–165. Cited by: §4, §5.</li>
-    <li id="bib.bib4">Barandiaran et al. (2024) X. E. Barandiaran, A. Calleja-López, and A. Monterde Decidim: political and technopolitical networks for participatory democracy. Springer Nature, Cham. Cited by: §3, §4.</li>
-    <li id="bib.bib5">Bauwens et al. (2019) M. Bauwens, V. Kostakis, and A. Pazaitis Peer to peer: the commons manifesto. University of Westminster Press, London. Cited by: §5.</li>
-    <li id="bib.bib6">Benkler (2006) Y. Benkler The wealth of networks: how social production transforms markets and freedom. Yale University Press, New Haven, CT. Cited by: §1, §2.</li>
-    <li id="bib.bib7">Bookchin (1971) M. Bookchin Post-scarcity anarchism. Ramparts Press, Berkeley, CA. Cited by: §1.</li>
-    <li id="bib.bib8">Bookchin (2005) M. Bookchin The ecology of freedom: the emergence and dissolution of hierarchy. AK Press, Oakland, CA. Note: Originally published 1982 Cited by: §1.</li>
-    <li id="bib.bib9">Crawford (2021) K. Crawford Atlas of AI: power, politics, and the planetary costs of artificial intelligence. Yale University Press, New Haven, CT. Cited by: §5.</li>
-    <li id="bib.bib10">Cybenko (1989) G. Cybenko Approximation by superpositions of a sigmoidal function. Mathematics of Control, Signals and Systems 2 (4), pp. 303–314. Cited by: §2, §7.</li>
-    <li id="bib.bib11">De Moor (2010) T. De Moor Institutional analysis and the commons. In The Wealth of the Commons, Cited by: §2.</li>
-    <li id="bib.bib12">Deneulin and Bano (2009) S. Deneulin and M. Bano Religion in development: rewriting the secular script. Zed Books, London. Cited by: §3.</li>
-    <li id="bib.bib13">Eloundou et al. (2023) T. Eloundou, S. Manning, P. Mishkin, and D. Rock GPTs are GPTs: an early look at the labor market impact potential of large language models. arXiv preprint arXiv:2303.10130. Cited by: Table 2.</li>
-    <li id="bib.bib14">Fab Foundation (2023) Fab Foundation Fab lab network. Note: https://fablfoundation.org/ Accessed February 2026 Cited by: §4.</li>
-    <li id="bib.bib15">FAO et al. (2023) FAO, IFAD, UNICEF, WFP, and WHO The state of food security and nutrition in the world 2023. Note: https://www.fao.org/publications Accessed February 2026 Cited by: §1.</li>
-    <li id="bib.bib16">FarmBot Inc. (2023) FarmBot Inc. FarmBot: open-source precision agriculture. Note: https://farm.bot/ Accessed February 2026 Cited by: §4.</li>
-    <li id="bib.bib17">Farrell (2016) J. Farrell Democratizing the electricity system: a vision for the 21st century grid. Institute for Local Self-Reliance, Minneapolis. Cited by: §3, §3.</li>
-    <li id="bib.bib18">Federici (2012) S. Federici Revolution at point zero: housework, reproduction, and feminist struggle. PM Press, Oakland, CA. Cited by: §1, §3.</li>
-    <li id="bib.bib19">Feenberg (2002) A. Feenberg Transforming technology: a critical theory revisited. Oxford University Press, Oxford. Cited by: §2.</li>
-    <li id="bib.bib20">Fehr and Fischbacher (2003) E. Fehr and U. Fischbacher The nature of human altruism. Nature 425 (6960), pp. 785–791. Cited by: §5.</li>
-    <li id="bib.bib21">Frey and Osborne (2017) C. B. Frey and M. A. Osborne The future of employment: how susceptible are jobs to computerisation?. Technological Forecasting and Social Change 114, pp. 254–280. Cited by: Figure 1, Table 2.</li>
-    <li id="bib.bib22">Fromm (1956) E. Fromm The art of loving. Harper & Brothers, New York. Cited by: §1.</li>
-    <li id="bib.bib23">Garrido-Merchán and Blanco (2022) E. C. Garrido-Merchán and C. Blanco Do artificial intelligence systems understand?. arXiv preprint arXiv:2207.11089. Cited by: §2, §7.</li>
-    <li id="bib.bib24">Garrido-Merchán and Lumbreras (2022) E. C. Garrido-Merchán and J. Lumbreras An ontological and epistemological discussion about the concept of artificial intelligence. Note: Preprint Cited by: §2, §7.</li>
-    <li id="bib.bib25">Garrido-Merchán (2024) E. C. Garrido-Merchán The problem of consciousness in artificial intelligence. Note: Preprint Cited by: §2, §7.</li>
-    <li id="bib.bib26">Garrido-Merchán and Lumbreras-Sancho (2023) E. C. Garrido-Merchán and M. Lumbreras-Sancho Moral decision-making as a reinforcement learning problem. Note: Preprint Cited by: §2, §6, §7.</li>
-    <li id="bib.bib27">Graeber (2018) D. Graeber Bullshit jobs: a theory. Simon & Schuster, New York. Cited by: §5.</li>
-    <li id="bib.bib28">Graeber (2013) D. Graeber The democracy project: a history, a crisis, a movement. Spiegel & Grau, New York. Cited by: §2.</li>
-    <li id="bib.bib29">Griffin (2017) P. Griffin The carbon majors database. CDP Report. Cited by: §3.</li>
-    <li id="bib.bib30">Gudynas (2011) E. Gudynas Buen vivir: today's tomorrow. Development 54 (4), pp. 441–447. Cited by: §3.</li>
-    <li id="bib.bib31">Hatzius et al. (2023) J. Hatzius, J. Briggs, D. Kodnani, and G. Pierdomenico The potentially large effects of artificial intelligence on economic growth. Goldman Sachs Economics Research. Cited by: Table 2.</li>
-    <li id="bib.bib32">Henrich (2016) J. Henrich The secret of our success: how culture is driving human evolution, domesticating our species, and making us smarter. Princeton University Press, Princeton, NJ. Cited by: §2, §5.</li>
-    <li id="bib.bib33">Hess and Ostrom (2007) C. Hess and E. Ostrom Understanding knowledge as a commons: from theory to practice. MIT Press, Cambridge, MA. Cited by: §1.</li>
-    <li id="bib.bib34">hooks (2000) b. hooks All about love: new visions. William Morrow, New York. Cited by: §1.</li>
-    <li id="bib.bib35">Hornik (1991) K. Hornik Approximation capabilities of multilayer feedforward networks. Neural Networks 4 (2), pp. 251–257. Cited by: §2, §7.</li>
-    <li id="bib.bib36">IRENA (2023) IRENA Renewable power generation costs in 2022. International Renewable Energy Agency, Abu Dhabi. Cited by: §1, §3, §6.</li>
-    <li id="bib.bib37">Jemielniak (2014) D. Jemielniak Common knowledge?: an ethnography of wikipedia. Stanford University Press, Stanford, CA. Cited by: §5.</li>
-    <li id="bib.bib38">Kloppenburg (2014) J. Kloppenburg Re-purposing the master's tools: the open source seed initiative and the struggle for seed sovereignty. The Journal of Peasant Studies 41 (6), pp. 1225–1246. Cited by: §3.</li>
-    <li id="bib.bib39">Knapp et al. (2016) M. Knapp, A. Flach, and E. Ayboga Revolution in Rojava: democratic autonomy and women's liberation in syrian kurdistan. Pluto Press, London. Cited by: §5.</li>
-    <li id="bib.bib40">Kropotkin (1902) P. Kropotkin Mutual aid: a factor of evolution. Heinemann, London. Cited by: §1, §2, §5.</li>
-    <li id="bib.bib41">Kunze and Becker (2015) C. Kunze and S. Becker Energy democracy in Europe: a survey and outlook. Rosa Luxemburg Stiftung, Brussels. Cited by: §4.</li>
-    <li id="bib.bib42">Lakhani and von Hippel (2003) K. R. Lakhani and E. von Hippel How open source software works: "free" user-to-user assistance. Research Policy 32 (6), pp. 923–943. Cited by: §5.</li>
-    <li id="bib.bib43">Le Guin (2014) U. K. Le Guin Speech at the national book awards. Note: National Book Foundation November 19, 2014 Cited by: §5.</li>
-    <li id="bib.bib44">Lessig (2006) L. Lessig Code: version 2.0. Basic Books, New York. Cited by: §1.</li>
-    <li id="bib.bib45">Levy (2010) S. Levy Hackers: heroes of the computer revolution. O'Reilly Media, Sebastopol, CA. Note: 25th Anniversary Edition. Originally published 1984 Cited by: §3.</li>
-    <li id="bib.bib46">Linux Foundation (2023) Linux Foundation 2023 state of Linux kernel development. Note: https://www.linuxfoundation.org/research Accessed February 2026 Cited by: §1, §2, §5.</li>
-    <li id="bib.bib47">Mazzucato (2013) M. Mazzucato The entrepreneurial state: debunking public vs. private sector myths. Anthem Press, London. Cited by: §5.</li>
-    <li id="bib.bib48">McKinsey Global Institute (2017) McKinsey Global Institute A future that works: automation, employment, and productivity. Note: https://www.mckinsey.com/mgi Accessed February 2026 Cited by: Table 2.</li>
-    <li id="bib.bib49">Mengelkamp et al. (2018) E. Mengelkamp, B. Notheisen, C. Beer, D. Dauer, and C. Weinhardt A blockchain-based smart grid: towards sustainable local energy markets. Computer Science - Research and Development 33 (1), pp. 207–214. Cited by: §4.</li>
-    <li id="bib.bib50">Mishel and Kandra (2021) L. Mishel and J. Kandra CEO pay has skyrocketed 1,322% since 1978. Technical report Economic Policy Institute. Cited by: Table 5, §5.</li>
-    <li id="bib.bib51">Mitchell (2006) S. Mitchell Big-box swindle: the true cost of mega-retailers and the fight for america's independent businesses. Beacon Press, Boston. Cited by: Table 5, §5.</li>
-    <li id="bib.bib52">Mnih et al. (2015) V. Mnih, K. Kavukcuoglu, D. Silver, A. A. Rusu, J. Veness, M. G. Bellemare, A. Graves, M. Riedmiller, A. K. Fidjeland, G. Ostrovski, et al. Human-level control through deep reinforcement learning. Nature 518 (7540), pp. 529–533. Cited by: Table 1, §2, §7.</li>
-    <li id="bib.bib53">Ocalan (2011) A. Ocalan Democratic confederalism. Transmedia Publishing, London. Cited by: §5.</li>
-    <li id="bib.bib54">OECD (2019) OECD The future of work: OECD employment outlook 2019. Note: https://www.oecd.org/employment-outlook/2019/ Organisation for Economic Co-operation and Development Cited by: Table 2.</li>
-    <li id="bib.bib55">OpenAI (2023) OpenAI GPT-4 technical report. Note: arXiv preprint arXiv:2303.08774 Cited by: §2.</li>
-    <li id="bib.bib56">Ostrom (1990) E. Ostrom Governing the commons: the evolution of institutions for collective action. Cambridge University Press, Cambridge. Cited by: §1, §1, §1, §2, §5.</li>
-    <li id="bib.bib57">Oxfam International (2023) Oxfam International Survival of the richest. Note: https://www.oxfam.org/en/research/survival-richest Accessed February 2026 Cited by: §1.</li>
-    <li id="bib.bib58">Parvin (2013) A. Parvin Architecture (and the built environment) is too important to be left to architects: a wikihouse manifesto. Architectural Design 83 (6), pp. 54–59. Cited by: §4.</li>
-    <li id="bib.bib59">Pencavel (2012) J. Pencavel Worker cooperatives and democratic governance. In Handbook of Economic Organization, pp. 462–480. Cited by: Table 5, Table 5, Table 5, §5.</li>
-    <li id="bib.bib60">Pettit (1997) P. Pettit Republicanism: a theory of freedom and government. Oxford University Press, Oxford. Cited by: §3.</li>
-    <li id="bib.bib61">Piwowar et al. (2018) H. Piwowar, J. Priem, V. Larivière, J. P. Alperin, L. Matthias, B. Norlander, A. Farley, J. West, and S. Haustein The state of OA: a large-scale analysis of the prevalence and impact of open access articles. PeerJ 6, pp. e4375. Cited by: §5.</li>
-    <li id="bib.bib62">Pope Francis (2015) Pope Francis Laudato si': on care for our common home. Vatican Press, Vatican City. Cited by: §3.</li>
-    <li id="bib.bib63">Puig de la Bellacasa (2017) M. Puig de la Bellacasa Matters of care: speculative ethics in more than human worlds. University of Minnesota Press, Minneapolis. Cited by: §1.</li>
-    <li id="bib.bib64">Raworth (2017) K. Raworth Doughnut economics: seven ways to think like a 21st-century economist. Chelsea Green Publishing, White River Junction, VT. Cited by: §5, §6.</li>
-    <li id="bib.bib65">Restakis (2010) J. Restakis Humanizing the economy: co-operatives in the age of capital. New Society Publishers, Gabriola Island, BC. Cited by: §3.</li>
-    <li id="bib.bib66">Rifkin (2011) J. Rifkin The third industrial revolution: how lateral power is transforming energy, the economy, and the world. Palgrave Macmillan, New York. Cited by: §3.</li>
-    <li id="bib.bib67">Schaal (1999) S. Schaal Is imitation learning the route to humanoid robots?. Trends in Cognitive Sciences 3 (6), pp. 233–242. Cited by: §2.</li>
-    <li id="bib.bib68">Scholz (2016) T. Scholz Platform cooperativism: challenging the corporate sharing economy. Rosa Luxemburg Stiftung, New York. Cited by: §1, §3.</li>
-    <li id="bib.bib69">Schumacher (1973) E. F. Schumacher Small is beautiful: economics as if people mattered. Blond & Briggs, London. Cited by: §3.</li>
-    <li id="bib.bib70">Scott (1998) J. C. Scott Seeing like a state: how certain schemes to improve the human condition have failed. Yale University Press, New Haven, CT. Cited by: §3.</li>
-    <li id="bib.bib71">Silver et al. (2016) D. Silver, A. Huang, C. J. Maddison, A. Guez, L. Sifre, G. van den Driessche, J. Schrittwieser, I. Antonoglou, V. Panneershelvam, M. Lanctot, et al. Mastering the game of Go with deep neural networks and tree search. Nature 529 (7587), pp. 484–489. Cited by: Table 1, Table 1.</li>
-    <li id="bib.bib72">Small et al. (2021) C. T. Small, M. Bjorkegren, T. Erkkilä, L. Shaw, and C. Megill Pol.is: scaling deliberation by mapping high dimensional opinion spaces. Recerca: Revista de Pensament i Anàlisi 26 (2), pp. 1–26. Cited by: §4.</li>
-    <li id="bib.bib73">Srnicek and Williams (2015) N. Srnicek and A. Williams Inventing the future: postcapitalism and a world without work. Verso Books, London. Cited by: §1, §2.</li>
-    <li id="bib.bib74">Stallman (2002) R. M. Stallman Free software, free society: selected essays of richard m. stallman. GNU Press, Boston, MA. Cited by: §3.</li>
-    <li id="bib.bib75">Star (1999) S. L. Star The ethnography of infrastructure. American Behavioral Scientist 43 (3), pp. 377–391. Cited by: §3.</li>
-    <li id="bib.bib76">Stiegler (2010) B. Stiegler Taking care of youth and the generations. Stanford University Press, Stanford, CA. Cited by: §2.</li>
-    <li id="bib.bib77">Stodden et al. (2014) V. Stodden, F. Leisch, and R. D. Peng Implementing reproducible research. CRC Press, Boca Raton, FL. Cited by: §5.</li>
-    <li id="bib.bib78">Sutton and Barto (2018) R. S. Sutton and A. G. Barto Reinforcement learning: an introduction. 2nd edition, MIT Press, Cambridge, MA. Cited by: §2, §7.</li>
-    <li id="bib.bib79">Trivers (1971) R. L. Trivers The evolution of reciprocal altruism. The Quarterly Review of Biology 46 (1), pp. 35–57. Cited by: §2.</li>
-    <li id="bib.bib80">Tronto (1993) J. C. Tronto Moral boundaries: a political argument for an ethic of care. Routledge, New York. Cited by: §3.</li>
-    <li id="bib.bib81">Watkins and Dayan (1992) C. J. C. H. Watkins and P. Dayan Q-learning. Machine Learning 8 (3-4), pp. 279–292. Cited by: §2, §7.</li>
-    <li id="bib.bib82">Weber and Matthews (2008) C. L. Weber and H. S. Matthews Food-miles and the relative climate impacts of food choices in the United States. Environmental Science & Technology 42 (10), pp. 3508–3513. Cited by: §3.</li>
-    <li id="bib.bib83">Whyte and Whyte (1991) W. F. Whyte and K. K. Whyte Making mondragon: the growth and dynamics of the worker cooperative complex. ILR Press, Ithaca, NY. Cited by: §3, §5.</li>
-    <li id="bib.bib84">Wilson (2007) D. S. Wilson Evolution for everyone: how darwin's theory can change the way we think about our lives. Delacorte Press, New York. Cited by: §2.</li>
-    <li id="bib.bib85">Winner (1980) L. Winner Do artifacts have politics?. Daedalus 109 (1), pp. 121–136. Cited by: §1.</li>
-    <li id="bib.bib86">Zuboff (2019) S. Zuboff The age of surveillance capitalism: the fight for a human future at the new frontier of power. PublicAffairs, New York. Cited by: §1, §2.</li>
-    <li id="bib.bib87">Zulli et al. (2020) D. Zulli, M. Liu, and R. Gehl Rethinking the "social" in "social media": insights into topology, abstraction, and scale on the Mastodon social network. New Media & Society 22 (7), pp. 1188–1205. Cited by: §3, §4.</li>
-</ul>
+<div class="ref-list">
+  <div class="ref-item" id="bib.bib1"><span class="ref-number">1.</span> Altieri and Nicholls (2012) M. A. Altieri and C. I. Nicholls Agroecology and the search for a truly sustainable agriculture. UNEP, Mexico City. Cited by: §3, §4.</div>
+  <div class="ref-item" id="bib.bib2"><span class="ref-number">2.</span> Anthropic (2024) Anthropic The Claude model family. Note: https://www.anthropic.com/research Accessed February 2026 Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib3"><span class="ref-number">3.</span> Baig et al. (2015) R. Baig, R. Roca, F. Freitag, and L. Navarro Guifi.net, a crowdsourced network infrastructure held in common. Computer Networks 90, pp. 150–165. Cited by: §4, §5.</div>
+  <div class="ref-item" id="bib.bib4"><span class="ref-number">4.</span> Barandiaran et al. (2024) X. E. Barandiaran, A. Calleja-López, and A. Monterde Decidim: political and technopolitical networks for participatory democracy. Springer Nature, Cham. Cited by: §3, §4.</div>
+  <div class="ref-item" id="bib.bib5"><span class="ref-number">5.</span> Bauwens et al. (2019) M. Bauwens, V. Kostakis, and A. Pazaitis Peer to peer: the commons manifesto. University of Westminster Press, London. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib6"><span class="ref-number">6.</span> Benkler (2006) Y. Benkler The wealth of networks: how social production transforms markets and freedom. Yale University Press, New Haven, CT. Cited by: §1, §2.</div>
+  <div class="ref-item" id="bib.bib7"><span class="ref-number">7.</span> Bookchin (1971) M. Bookchin Post-scarcity anarchism. Ramparts Press, Berkeley, CA. Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib8"><span class="ref-number">8.</span> Bookchin (2005) M. Bookchin The ecology of freedom: the emergence and dissolution of hierarchy. AK Press, Oakland, CA. Note: Originally published 1982 Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib9"><span class="ref-number">9.</span> Crawford (2021) K. Crawford Atlas of AI: power, politics, and the planetary costs of artificial intelligence. Yale University Press, New Haven, CT. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib10"><span class="ref-number">10.</span> Cybenko (1989) G. Cybenko Approximation by superpositions of a sigmoidal function. Mathematics of Control, Signals and Systems 2 (4), pp. 303–314. Cited by: §2, §7.</div>
+  <div class="ref-item" id="bib.bib11"><span class="ref-number">11.</span> De Moor (2010) T. De Moor Institutional analysis and the commons. In The Wealth of the Commons, Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib12"><span class="ref-number">12.</span> Deneulin and Bano (2009) S. Deneulin and M. Bano Religion in development: rewriting the secular script. Zed Books, London. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib13"><span class="ref-number">13.</span> Eloundou et al. (2023) T. Eloundou, S. Manning, P. Mishkin, and D. Rock GPTs are GPTs: an early look at the labor market impact potential of large language models. arXiv preprint arXiv:2303.10130. Cited by: Table 2.</div>
+  <div class="ref-item" id="bib.bib14"><span class="ref-number">14.</span> Fab Foundation (2023) Fab Foundation Fab lab network. Note: https://fablfoundation.org/ Accessed February 2026 Cited by: §4.</div>
+  <div class="ref-item" id="bib.bib15"><span class="ref-number">15.</span> FAO et al. (2023) FAO, IFAD, UNICEF, WFP, and WHO The state of food security and nutrition in the world 2023. Note: https://www.fao.org/publications Accessed February 2026 Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib16"><span class="ref-number">16.</span> FarmBot Inc. (2023) FarmBot Inc. FarmBot: open-source precision agriculture. Note: https://farm.bot/ Accessed February 2026 Cited by: §4.</div>
+  <div class="ref-item" id="bib.bib17"><span class="ref-number">17.</span> Farrell (2016) J. Farrell Democratizing the electricity system: a vision for the 21st century grid. Institute for Local Self-Reliance, Minneapolis. Cited by: §3, §3.</div>
+  <div class="ref-item" id="bib.bib18"><span class="ref-number">18.</span> Federici (2012) S. Federici Revolution at point zero: housework, reproduction, and feminist struggle. PM Press, Oakland, CA. Cited by: §1, §3.</div>
+  <div class="ref-item" id="bib.bib19"><span class="ref-number">19.</span> Feenberg (2002) A. Feenberg Transforming technology: a critical theory revisited. Oxford University Press, Oxford. Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib20"><span class="ref-number">20.</span> Fehr and Fischbacher (2003) E. Fehr and U. Fischbacher The nature of human altruism. Nature 425 (6960), pp. 785–791. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib21"><span class="ref-number">21.</span> Frey and Osborne (2017) C. B. Frey and M. A. Osborne The future of employment: how susceptible are jobs to computerisation?. Technological Forecasting and Social Change 114, pp. 254–280. Cited by: Figure 1, Table 2.</div>
+  <div class="ref-item" id="bib.bib22"><span class="ref-number">22.</span> Fromm (1956) E. Fromm The art of loving. Harper &amp; Brothers, New York. Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib23"><span class="ref-number">23.</span> Garrido-Merchán and Blanco (2022) E. C. Garrido-Merchán and C. Blanco Do artificial intelligence systems understand?. arXiv preprint arXiv:2207.11089. Cited by: §2, §7.</div>
+  <div class="ref-item" id="bib.bib24"><span class="ref-number">24.</span> Garrido-Merchán and Lumbreras (2022) E. C. Garrido-Merchán and J. Lumbreras An ontological and epistemological discussion about the concept of artificial intelligence. Note: Preprint Cited by: §2, §7.</div>
+  <div class="ref-item" id="bib.bib25"><span class="ref-number">25.</span> Garrido-Merchán (2024) E. C. Garrido-Merchán The problem of consciousness in artificial intelligence. Note: Preprint Cited by: §2, §7.</div>
+  <div class="ref-item" id="bib.bib26"><span class="ref-number">26.</span> Garrido-Merchán and Lumbreras-Sancho (2023) E. C. Garrido-Merchán and M. Lumbreras-Sancho Moral decision-making as a reinforcement learning problem. Note: Preprint Cited by: §2, §6, §7.</div>
+  <div class="ref-item" id="bib.bib27"><span class="ref-number">27.</span> Graeber (2018) D. Graeber Bullshit jobs: a theory. Simon &amp; Schuster, New York. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib28"><span class="ref-number">28.</span> Graeber (2013) D. Graeber The democracy project: a history, a crisis, a movement. Spiegel &amp; Grau, New York. Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib29"><span class="ref-number">29.</span> Griffin (2017) P. Griffin The carbon majors database. CDP Report. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib30"><span class="ref-number">30.</span> Gudynas (2011) E. Gudynas Buen vivir: today's tomorrow. Development 54 (4), pp. 441–447. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib31"><span class="ref-number">31.</span> Hatzius et al. (2023) J. Hatzius, J. Briggs, D. Kodnani, and G. Pierdomenico The potentially large effects of artificial intelligence on economic growth. Goldman Sachs Economics Research. Cited by: Table 2.</div>
+  <div class="ref-item" id="bib.bib32"><span class="ref-number">32.</span> Henrich (2016) J. Henrich The secret of our success: how culture is driving human evolution, domesticating our species, and making us smarter. Princeton University Press, Princeton, NJ. Cited by: §2, §5.</div>
+  <div class="ref-item" id="bib.bib33"><span class="ref-number">33.</span> Hess and Ostrom (2007) C. Hess and E. Ostrom Understanding knowledge as a commons: from theory to practice. MIT Press, Cambridge, MA. Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib34"><span class="ref-number">34.</span> hooks (2000) b. hooks All about love: new visions. William Morrow, New York. Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib35"><span class="ref-number">35.</span> Hornik (1991) K. Hornik Approximation capabilities of multilayer feedforward networks. Neural Networks 4 (2), pp. 251–257. Cited by: §2, §7.</div>
+  <div class="ref-item" id="bib.bib36"><span class="ref-number">36.</span> IRENA (2023) IRENA Renewable power generation costs in 2022. International Renewable Energy Agency, Abu Dhabi. Cited by: §1, §3, §6.</div>
+  <div class="ref-item" id="bib.bib37"><span class="ref-number">37.</span> Jemielniak (2014) D. Jemielniak Common knowledge?: an ethnography of wikipedia. Stanford University Press, Stanford, CA. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib38"><span class="ref-number">38.</span> Kloppenburg (2014) J. Kloppenburg Re-purposing the master's tools: the open source seed initiative and the struggle for seed sovereignty. The Journal of Peasant Studies 41 (6), pp. 1225–1246. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib39"><span class="ref-number">39.</span> Knapp et al. (2016) M. Knapp, A. Flach, and E. Ayboga Revolution in Rojava: democratic autonomy and women's liberation in syrian kurdistan. Pluto Press, London. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib40"><span class="ref-number">40.</span> Kropotkin (1902) P. Kropotkin Mutual aid: a factor of evolution. Heinemann, London. Cited by: §1, §2, §5.</div>
+  <div class="ref-item" id="bib.bib41"><span class="ref-number">41.</span> Kunze and Becker (2015) C. Kunze and S. Becker Energy democracy in Europe: a survey and outlook. Rosa Luxemburg Stiftung, Brussels. Cited by: §4.</div>
+  <div class="ref-item" id="bib.bib42"><span class="ref-number">42.</span> Lakhani and von Hippel (2003) K. R. Lakhani and E. von Hippel How open source software works: "free" user-to-user assistance. Research Policy 32 (6), pp. 923–943. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib43"><span class="ref-number">43.</span> Le Guin (2014) U. K. Le Guin Speech at the national book awards. Note: National Book Foundation November 19, 2014 Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib44"><span class="ref-number">44.</span> Lessig (2006) L. Lessig Code: version 2.0. Basic Books, New York. Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib45"><span class="ref-number">45.</span> Levy (2010) S. Levy Hackers: heroes of the computer revolution. O'Reilly Media, Sebastopol, CA. Note: 25th Anniversary Edition. Originally published 1984 Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib46"><span class="ref-number">46.</span> Linux Foundation (2023) Linux Foundation 2023 state of Linux kernel development. Note: https://www.linuxfoundation.org/research Accessed February 2026 Cited by: §1, §2, §5.</div>
+  <div class="ref-item" id="bib.bib47"><span class="ref-number">47.</span> Mazzucato (2013) M. Mazzucato The entrepreneurial state: debunking public vs. private sector myths. Anthem Press, London. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib48"><span class="ref-number">48.</span> McKinsey Global Institute (2017) McKinsey Global Institute A future that works: automation, employment, and productivity. Note: https://www.mckinsey.com/mgi Accessed February 2026 Cited by: Table 2.</div>
+  <div class="ref-item" id="bib.bib49"><span class="ref-number">49.</span> Mengelkamp et al. (2018) E. Mengelkamp, B. Notheisen, C. Beer, D. Dauer, and C. Weinhardt A blockchain-based smart grid: towards sustainable local energy markets. Computer Science - Research and Development 33 (1), pp. 207–214. Cited by: §4.</div>
+  <div class="ref-item" id="bib.bib50"><span class="ref-number">50.</span> Mishel and Kandra (2021) L. Mishel and J. Kandra CEO pay has skyrocketed 1,322% since 1978. Technical report Economic Policy Institute. Cited by: Table 5, §5.</div>
+  <div class="ref-item" id="bib.bib51"><span class="ref-number">51.</span> Mitchell (2006) S. Mitchell Big-box swindle: the true cost of mega-retailers and the fight for america's independent businesses. Beacon Press, Boston. Cited by: Table 5, §5.</div>
+  <div class="ref-item" id="bib.bib52"><span class="ref-number">52.</span> Mnih et al. (2015) V. Mnih, K. Kavukcuoglu, D. Silver, A. A. Rusu, J. Veness, M. G. Bellemare, A. Graves, M. Riedmiller, A. K. Fidjeland, G. Ostrovski, et al. Human-level control through deep reinforcement learning. Nature 518 (7540), pp. 529–533. Cited by: Table 1, §2, §7.</div>
+  <div class="ref-item" id="bib.bib53"><span class="ref-number">53.</span> Ocalan (2011) A. Ocalan Democratic confederalism. Transmedia Publishing, London. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib54"><span class="ref-number">54.</span> OECD (2019) OECD The future of work: OECD employment outlook 2019. Note: https://www.oecd.org/employment-outlook/2019/ Organisation for Economic Co-operation and Development Cited by: Table 2.</div>
+  <div class="ref-item" id="bib.bib55"><span class="ref-number">55.</span> OpenAI (2023) OpenAI GPT-4 technical report. Note: arXiv preprint arXiv:2303.08774 Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib56"><span class="ref-number">56.</span> Ostrom (1990) E. Ostrom Governing the commons: the evolution of institutions for collective action. Cambridge University Press, Cambridge. Cited by: §1, §1, §1, §2, §5.</div>
+  <div class="ref-item" id="bib.bib57"><span class="ref-number">57.</span> Oxfam International (2023) Oxfam International Survival of the richest. Note: https://www.oxfam.org/en/research/survival-richest Accessed February 2026 Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib58"><span class="ref-number">58.</span> Parvin (2013) A. Parvin Architecture (and the built environment) is too important to be left to architects: a wikihouse manifesto. Architectural Design 83 (6), pp. 54–59. Cited by: §4.</div>
+  <div class="ref-item" id="bib.bib59"><span class="ref-number">59.</span> Pencavel (2012) J. Pencavel Worker cooperatives and democratic governance. In Handbook of Economic Organization, pp. 462–480. Cited by: Table 5, Table 5, Table 5, §5.</div>
+  <div class="ref-item" id="bib.bib60"><span class="ref-number">60.</span> Pettit (1997) P. Pettit Republicanism: a theory of freedom and government. Oxford University Press, Oxford. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib61"><span class="ref-number">61.</span> Piwowar et al. (2018) H. Piwowar, J. Priem, V. Larivière, J. P. Alperin, L. Matthias, B. Norlander, A. Farley, J. West, and S. Haustein The state of OA: a large-scale analysis of the prevalence and impact of open access articles. PeerJ 6, pp. e4375. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib62"><span class="ref-number">62.</span> Pope Francis (2015) Pope Francis Laudato si': on care for our common home. Vatican Press, Vatican City. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib63"><span class="ref-number">63.</span> Puig de la Bellacasa (2017) M. Puig de la Bellacasa Matters of care: speculative ethics in more than human worlds. University of Minnesota Press, Minneapolis. Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib64"><span class="ref-number">64.</span> Raworth (2017) K. Raworth Doughnut economics: seven ways to think like a 21st-century economist. Chelsea Green Publishing, White River Junction, VT. Cited by: §5, §6.</div>
+  <div class="ref-item" id="bib.bib65"><span class="ref-number">65.</span> Restakis (2010) J. Restakis Humanizing the economy: co-operatives in the age of capital. New Society Publishers, Gabriola Island, BC. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib66"><span class="ref-number">66.</span> Rifkin (2011) J. Rifkin The third industrial revolution: how lateral power is transforming energy, the economy, and the world. Palgrave Macmillan, New York. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib67"><span class="ref-number">67.</span> Schaal (1999) S. Schaal Is imitation learning the route to humanoid robots?. Trends in Cognitive Sciences 3 (6), pp. 233–242. Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib68"><span class="ref-number">68.</span> Scholz (2016) T. Scholz Platform cooperativism: challenging the corporate sharing economy. Rosa Luxemburg Stiftung, New York. Cited by: §1, §3.</div>
+  <div class="ref-item" id="bib.bib69"><span class="ref-number">69.</span> Schumacher (1973) E. F. Schumacher Small is beautiful: economics as if people mattered. Blond &amp; Briggs, London. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib70"><span class="ref-number">70.</span> Scott (1998) J. C. Scott Seeing like a state: how certain schemes to improve the human condition have failed. Yale University Press, New Haven, CT. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib71"><span class="ref-number">71.</span> Silver et al. (2016) D. Silver, A. Huang, C. J. Maddison, A. Guez, L. Sifre, G. van den Driessche, J. Schrittwieser, I. Antonoglou, V. Panneershelvam, M. Lanctot, et al. Mastering the game of Go with deep neural networks and tree search. Nature 529 (7587), pp. 484–489. Cited by: Table 1, Table 1.</div>
+  <div class="ref-item" id="bib.bib72"><span class="ref-number">72.</span> Small et al. (2021) C. T. Small, M. Bjorkegren, T. Erkkilä, L. Shaw, and C. Megill Pol.is: scaling deliberation by mapping high dimensional opinion spaces. Recerca: Revista de Pensament i Anàlisi 26 (2), pp. 1–26. Cited by: §4.</div>
+  <div class="ref-item" id="bib.bib73"><span class="ref-number">73.</span> Srnicek and Williams (2015) N. Srnicek and A. Williams Inventing the future: postcapitalism and a world without work. Verso Books, London. Cited by: §1, §2.</div>
+  <div class="ref-item" id="bib.bib74"><span class="ref-number">74.</span> Stallman (2002) R. M. Stallman Free software, free society: selected essays of richard m. stallman. GNU Press, Boston, MA. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib75"><span class="ref-number">75.</span> Star (1999) S. L. Star The ethnography of infrastructure. American Behavioral Scientist 43 (3), pp. 377–391. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib76"><span class="ref-number">76.</span> Stiegler (2010) B. Stiegler Taking care of youth and the generations. Stanford University Press, Stanford, CA. Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib77"><span class="ref-number">77.</span> Stodden et al. (2014) V. Stodden, F. Leisch, and R. D. Peng Implementing reproducible research. CRC Press, Boca Raton, FL. Cited by: §5.</div>
+  <div class="ref-item" id="bib.bib78"><span class="ref-number">78.</span> Sutton and Barto (2018) R. S. Sutton and A. G. Barto Reinforcement learning: an introduction. 2nd edition, MIT Press, Cambridge, MA. Cited by: §2, §7.</div>
+  <div class="ref-item" id="bib.bib79"><span class="ref-number">79.</span> Trivers (1971) R. L. Trivers The evolution of reciprocal altruism. The Quarterly Review of Biology 46 (1), pp. 35–57. Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib80"><span class="ref-number">80.</span> Tronto (1993) J. C. Tronto Moral boundaries: a political argument for an ethic of care. Routledge, New York. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib81"><span class="ref-number">81.</span> Watkins and Dayan (1992) C. J. C. H. Watkins and P. Dayan Q-learning. Machine Learning 8 (3-4), pp. 279–292. Cited by: §2, §7.</div>
+  <div class="ref-item" id="bib.bib82"><span class="ref-number">82.</span> Weber and Matthews (2008) C. L. Weber and H. S. Matthews Food-miles and the relative climate impacts of food choices in the United States. Environmental Science &amp; Technology 42 (10), pp. 3508–3513. Cited by: §3.</div>
+  <div class="ref-item" id="bib.bib83"><span class="ref-number">83.</span> Whyte and Whyte (1991) W. F. Whyte and K. K. Whyte Making mondragon: the growth and dynamics of the worker cooperative complex. ILR Press, Ithaca, NY. Cited by: §3, §5.</div>
+  <div class="ref-item" id="bib.bib84"><span class="ref-number">84.</span> Wilson (2007) D. S. Wilson Evolution for everyone: how darwin's theory can change the way we think about our lives. Delacorte Press, New York. Cited by: §2.</div>
+  <div class="ref-item" id="bib.bib85"><span class="ref-number">85.</span> Winner (1980) L. Winner Do artifacts have politics?. Daedalus 109 (1), pp. 121–136. Cited by: §1.</div>
+  <div class="ref-item" id="bib.bib86"><span class="ref-number">86.</span> Zuboff (2019) S. Zuboff The age of surveillance capitalism: the fight for a human future at the new frontier of power. PublicAffairs, New York. Cited by: §1, §2.</div>
+  <div class="ref-item" id="bib.bib87"><span class="ref-number">87.</span> Zulli et al. (2020) D. Zulli, M. Liu, and R. Gehl Rethinking the "social" in "social media": insights into topology, abstraction, and scale on the Mastodon social network. New Media &amp; Society 22 (7), pp. 1188–1205. Cited by: §3, §4.</div>
+</div>
 
 
             `,
