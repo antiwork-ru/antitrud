@@ -12,6 +12,7 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://antitrud.vercel.app"),
   title: "антитруд.",
   description:
     "антитруд. – книги и тексты об антитруде (антиработе), посттрудовом обществе, критике работы, автоматизации, базовом доходе и социальной теории.",

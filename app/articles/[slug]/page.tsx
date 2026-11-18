@@ -6,6 +6,9 @@ import { Container } from "../../../components/Container";
 import { SiteFooter } from "../../../components/SiteFooter";
 import { articles } from "../../../data/articles";
 import { cn } from "../../../lib/cn";
+import type { Metadata } from "next";
+
+const BASE_URL = "https://antitrud.vercel.app";
 
 function typeBadgeClass(type: string) {
     switch (type) {
@@ -24,22 +27,50 @@ export function generateStaticParams() {
 }
 
 // Dynamic metadata
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata(
+    { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
     const { slug } = await params;
     const article = articles.find((a) => a.slug === slug);
-    const pageUrl = `https://antitrud.vercel.app/articles/${slug}`;
     if (!article) return {};
+
+    const pageUrl = `${BASE_URL}/articles/${slug}`;
+
+    // Гарантируем абсолютный URL для картинки
+    const imageUrl = article.imageUrl.startsWith("http")
+        ? article.imageUrl
+        : `${BASE_URL}${article.imageUrl}`;
+
     return {
         title: `${article.title} – антитруд.`,
         description: article.description,
-        alternates: {
-            canonical: pageUrl,
-        },
+        alternates: { canonical: pageUrl },
+
         openGraph: {
+            type: "article",
             title: article.title,
             description: article.description,
             url: pageUrl,
-            images: [article.imageUrl],
+            siteName: "антитруд.",
+            locale: "ru_RU",
+            images: [
+                {
+                    url: imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: article.title,
+                },
+            ],
+            // Опционально, если есть ISO-дата:
+            // publishedTime: article.publishedAt,
+            // authors: article.info?.author ? [article.info.author] : undefined,
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: article.title,
+            description: article.description,
+            images: [imageUrl],
         },
     };
 }
